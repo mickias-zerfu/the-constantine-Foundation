@@ -1,0 +1,64 @@
+<div class="headerContainer">
+  <div id="menu-first-row">
+    <div class="menus  pr-4">
+      <div class="menus left-menu">
+        <!-- logo -->
+        <div class="header">
+          <div class="flex items-center logo">
+            <a class="logo-image" alt="Logo" href="/home"></a>
+            <h1 class="ml-2 text-1xl font-bold text-light-800 font-ubuntu leading-tight text-white">
+              Constanatine<br>Foundation
+            </h1>
+          </div>
+        </div>
+        <!-- logo end -->
+        <!-- left Menu -->
+        <div class="pl-8 flex-grow flex justify-between left-menu-items">
+          <ul class="flex items-center list-none space-x-4 w-full">
+           <li class="flex-grow">
+              <button class="learn-more">
+                <a class="button-text hover:font-bold" routerLinkActive="nav-link active" [routerLink]="['home']">Home</a>
+              </button>
+            </li>
+            <li class="flex-grow">
+               <button class="learn-more">
+                 <a class="button-text hover:font-bold" routerLinkActive="nav-link active" [routerLink]="['blogs']">Blogs</a>
+               </button>
+             </li>
+             <li class="flex-grow">
+                <button class="learn-more">
+                  <a class="button-text hover:font-bold" routerLinkActive="nav-link active" [routerLink]="['projects']">Projects</a>
+                </button>
+              </li>
+              <li class="flex-grow">
+                 <button class="learn-more">
+                   <a class="button-text hover:font-bold" routerLinkActive="nav-link active" [routerLink]="['events']">Events</a>
+                 </button>
+               </li>
+           <li class="flex-grow">
+              <button class="learn-more">
+                <a class="button-text hover:font-bold" routerLinkActive="nav-link active" [routerLink]="['contact-us']">Contact</a>
+              </button>
+            </li>
+           <li class="flex-grow">
+              <button class="learn-more">
+                <a class="button-text hover:font-bold" routerLinkActive="nav-link active" [routerLink]="['about-us']">About</a>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <!-- left menu end -->
+      </div>
+      <div class="menu right-menu flex justify-end">
+        <ul class="menu menuitems  pr-4 mr-4">
+          <li>
+            <a routerLinkActive="active" [routerLink]="['login']" class="btn bg-red-500 text-white font-bold py-2 px-4 rounded-lg">
+              <span class="btn-content">Donate</span>
+              <span class="icon"><i class="fa fa-user" aria-hidden="true"></i></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
