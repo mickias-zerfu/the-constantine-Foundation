@@ -2,8 +2,8 @@
   height: max-content;
   /* display: flex; */
   align-items: center;
-  background-color: transparent;
-  background-image: url("./../../../assets/images/bg/sample.jpg");
+  background-color: #9AB8D1;
+  /* background-image: url("./../../../assets/images/bg/sample.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
