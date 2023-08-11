@@ -10,19 +10,19 @@
         <ng-template carouselSlide>
           <div class="slide">
 
-            <img src='../../assets/images/Bg/AGRICULTURE.png' alt="img 1" />
+            <img src='../../assets/images/Bg/ECONOMIC EMPOWERMENT.png' alt="img 1" />
           </div>
         </ng-template>
         <ng-template carouselSlide>
           <div class="slide">
 
-            <img src='../../assets/images/Bg/AGRICULTURE.png' alt="img 1" />
+            <img src='../../assets/images/Bg/EDUCATION.png' alt="img 1" />
           </div>
         </ng-template>
         <ng-template carouselSlide>
           <div class="slide">
 
-            <img src='../../assets/images/Bg/AGRICULTURE.png' alt="img 1" />
+            <img src='../../assets/images/Bg/HEALTH CARE.png' alt="img 1" />
           </div>
         </ng-template>
       </owl-carousel-o>
@@ -145,7 +145,7 @@
         </div>
       </div>
     </section>
-    <section class="py-16 px-16">
+    <section class="REPORTS py-16 px-16">
       <div class="container">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div class="nonprofit flex flex-col items-center justify-center">
@@ -183,7 +183,11 @@
         </div>
       </div>
     </section>
-    <section  class="py-16 px-16" class="donation-section gap" style="height: 850px; width:100%">
+
+    <section class="py-16 px-16 Campaign">
+      <app-campaign-container></app-campaign-container>
+    </section>
+    <section class="py-16 px-16 donation-section" style="height: 850px; width:100%">
       <div class="heading text-center">
         <h1 class="title">Donatio Section.</h1>
         <h2 class="sub-title">We Help Poor Children to Get a Better Life.</h2>
@@ -261,7 +265,7 @@
         </div>
       </div> -->
     </section>
-    <section class="py-16 px-16">
+    <section class="py-16 px-32">
       <div class="container py-8">
         <div class="heading text-center">
           <h1 class="title">working on charity</h1>
@@ -269,13 +273,22 @@
         </div>
       </div>
       <div class="container">
-        <div class="flex justify-center space-x-4 w-full">
+        <div class="flex justify-center space-x-4 w-full gap gap-16">
 
           <div class="w-full md:w-1/2 lg:w-1/3 rounded">
             <div class="rounded-lg overflow-hidden flex flex-col items-center  shadow-md  ">
               <div class="content w-full  items-center text-center ">
                 <div class="w-full h-full rounded flex text-center " class="">
-                  <img alt="upcoming-events" src='../../assets/images/events/events 1.png' class="w-full h-full ">
+                  <div class="image-container relative">
+                    <img alt="upcoming-events" src="../../assets/images/events/events 1.png"
+                      class="w-full h-full rounded">
+                    <div
+                      class="image-overlay absolute top-0 left-0 w-full h-full bg-green-500 opacity-0 transition-opacity duration-300">
+                      <a href="event-details.html" class="mat-icon-container">
+                        <mat-icon class="mat-icon">arrow_forward</mat-icon>
+                      </a>
+                    </div>
+                  </div>
                   <div class="upcoming-event-time flex justify-between bg-green-500 rounded">
                     <h4 class="flex-1">27<span>Jul<br>2023</span></h4>
                     <div class="upcoming-event-separator"></div>
@@ -297,7 +310,13 @@
             <div class="rounded-lg overflow-hidden flex flex-col items-center  shadow-md  ">
               <div class="content w-full  items-center text-center ">
                 <div class="w-full h-full rounded flex text-center " class="">
-                  <img alt="upcoming-events" src='../../assets/images/events/events 2.png' class="w-full h-full ">
+                  <div class="image-container relative">
+                    <img alt="upcoming-events" src="../../assets/images/events/events 2.png"
+                      class="w-full h-full rounded">
+                    <div
+                      class="image-overlay absolute top-0 left-0 w-full h-full bg-green-500 opacity-0 transition-opacity duration-300">
+                    </div>
+                  </div>
                   <div class="upcoming-event-time flex justify-between bg-green-500 rounded">
                     <h4 class="flex-1">27<span>Jul<br>2023</span></h4>
                     <div class="upcoming-event-separator"></div>
@@ -319,7 +338,13 @@
             <div class="rounded-lg overflow-hidden flex flex-col items-center  shadow-md  ">
               <div class="content w-full  items-center text-center ">
                 <div class="w-full h-full rounded flex text-center " class="">
-                  <img alt="upcoming-events" src='../../assets/images/events/events 3.png' class="w-full h-full ">
+                  <div class="image-container relative">
+                    <img alt="upcoming-events" src="../../assets/images/events/events 3.png"
+                      class="w-full h-full rounded">
+                    <div
+                      class="image-overlay absolute top-0 left-0 w-full h-full bg-green-500 opacity-0 transition-opacity duration-300">
+                    </div>
+                  </div>
                   <div class="upcoming-event-time flex justify-between bg-green-500 rounded">
                     <h4 class="flex-1">27<span>Jul<br>2023</span></h4>
                     <div class="upcoming-event-separator"></div>
@@ -339,6 +364,18 @@
           </div>
         </div>
       </div>
+    </section>
+    <section class="py-16 px-16">
+      <div class="container py-8">
+        <div class="heading text-center">
+          <h1 class="title">Charity Gifts</h1>
+          <h2 class="sub-title">Shop from Us </h2>
+        </div>
+        <app-shop-container>
+
+        </app-shop-container>
+      </div>
+
     </section>
     <section class="py-16 px-16">
       <owl-carousel-o [options]="partnersOptions" (translated)="getPassedData($event)">

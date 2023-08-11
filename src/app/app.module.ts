@@ -23,6 +23,8 @@ import { BlogCreateComponent } from './pages/blog-management/blog-create/blog-cr
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BlogListComponent } from './pages/blog-management/blog-list/blog-list.component';
 import { BlogDetailComponent } from './pages/blog-management/blog-detail/blog-detail.component';
+import { ShopContainerComponent } from './home-container/shop-container/shop-container.component';
+import { CampaignContainerComponent } from './home-container/campaign-container/campaign-container.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { BlogDetailComponent } from './pages/blog-management/blog-detail/blog-de
     ContactUsComponent,
     BlogCreateComponent,
     BlogListComponent,
-    BlogDetailComponent
+    BlogDetailComponent,
+    ShopContainerComponent,
+    CampaignContainerComponent
   ],
   imports: [
     BrowserModule,
