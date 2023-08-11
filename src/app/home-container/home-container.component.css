@@ -1,71 +1,79 @@
-.page{
-  background-color: #9AB8D1;
+.carousel-slide {
+  padding: 0 2rem; /* Add padding to the carousel */
 }
-.top-container {
-  background-image: url("./../../assets/images/bg/sample.jpg");
+
+.slide {
+  width: 100%; /* Make each slider full width */
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0rem;
+}
+
+.slide img {
+  height: auto; /* Adjust the height of the image according to its aspect ratio */
+  width: 100%; /* Make the image fill the width of the slider */
+}
+
+.header-container {
+  width: 60%;
+  height: 100% !important;
+  margin: auto 10px;
+  padding: 150px 100px;
+}
+.title {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 3em;
+  line-height: 1.5;
+  font-weight: 900;
+  color: rgb(0, 0, 0);
+}
+.sub-title {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 800;
+  font-size: 1.5em;
+  line-height: 1.5;
+  color: rgb(0, 0, 0);
+}
+
+.upcoming-event-time {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  /* position: absolute; */
+  width: 100%;
+  padding: 0px 25px;
+  border-radius: 30px;
+  width: 82%;
+  margin: auto;
+  /* margin-top: -50px; */
+  z-index: 1;
+}
+.upcoming-event-time h4 {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.upcoming-event-time span {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-left: 7px;
+  line-height: 18px;
+}
+.upcoming-event-separator {
+  display: block;
+  background-color: #ffffff61;
+  width: 1px;
+  height: 70px;
+}
+.donation-section {
+  background-image: url('../../assets/images/donation.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   margin: 0px;
   padding: 0px;
-  background-color: rgba(255, 255, 255, 0.353);
-}
-.header-container {
-  width: 60%;
-  height: 100% !important;
-  margin: auto 10px;
-  padding: 50px 100px;
-}
-.title {
-  font-family: "Ubuntu", sans-serif;
-  font-size: 4.5em;
-  line-height: 1.5;
-  font-weight: 900;
-  color: white;
-}
-.sub-title {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 800;
-  font-size: 2.5em;
-  line-height: 1.5;
-  color: white;
-}
-.divider{
-  padding: 100px;
-
-}
-.logo-image{
-  height: 100px;
-  width: 100px;
-}
-.card {
-  box-sizing: border-box;
-  width: 250px;
-  height: 200px;
-  background: inherit;
-  border: 1px solid white;
-  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
-  backdrop-filter: blur(6px);
-  border-radius: 17px;
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.5s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  user-select: none;
-  font-weight: bolder;
-  color: rgb(255, 255, 255);
-}
-
-.card:hover {
-  border: 1px solid black;
-  transform: scale(1.05);
-}
-
-.card:active {
-  transform: scale(0.95) rotateZ(1.7deg);
-}
-.next-conatiner{
-  background-color: #9AB8D1;
 }

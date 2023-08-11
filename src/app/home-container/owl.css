@@ -1,0 +1,34 @@
+::ng-deep .owl-theme .owl-dots .owl-dot span {
+  background: #D6D6D6!important; /* dots color*/
+}
+
+::ng-deep .owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #FCAC45!important; /*active and on hover color*/
+}
+::ng-deep .owl-theme .owl-dots {
+  position: absolute;
+  left: 10px; /* Adjust the value to set the desired padding from the left */
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Adjust the alignment as needed */
+  justify-content: center; /* Adjust the alignment as needed */
+}
+
+::ng-deep .owl-theme .owl-dot {
+  margin-bottom: 10px; /* Adjust the value to set the desired spacing between dots */
+}
+
+::ng-deep .owl-theme .owl-dot span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+::ng-deep .owl-theme .owl-dot.active span {
+  background-color: #f00;
+}

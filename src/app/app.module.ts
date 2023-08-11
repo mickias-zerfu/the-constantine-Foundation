@@ -6,8 +6,8 @@ import { HttpClientModule } from "@angular/common/http";
 import { AppRoutingModule } from "./app-routing.module";
 
 
+import { CarouselModule } from 'ngx-owl-carousel-o';
 import { MaterialModule } from "./material.module";
-import { QuillModule } from 'ngx-quill';
 
 import { AppComponent } from './app.component';
 import { HomeContainerComponent } from './home-container/home-container.component';
@@ -48,8 +48,7 @@ import { BlogDetailComponent } from './pages/blog-management/blog-detail/blog-de
     HttpClientModule,
     BrowserAnimationsModule,
     MaterialModule,
-    QuillModule.forRoot(),
-
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
