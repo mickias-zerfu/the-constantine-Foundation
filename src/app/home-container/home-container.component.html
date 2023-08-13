@@ -27,172 +27,164 @@
         </ng-template>
       </owl-carousel-o>
     </section>
-    <section class="py-8">
-      <div class="flex justify-center px-4">
-        <div class="flex justify-center space-x-4 w-full">
-          <div class="w-full md:w-1/2 lg:w-1/3 rounded">
-            <div class="rounded-lg overflow-hidden flex flex-col items-center p-4 shadow-md card card1">
-              <div class="content">
-                <div class="w-full h-full rounded flex text-center">
-                  <img src="../../assets/images/cards/MEMBER.png" alt="" class="rounded">
-                </div>
-                <!-- <p class="heading">Card Hover Effect</p>
+    <section style="position: relative;">
+      <section class="py-8 cards-container">
+        <div class="flex justify-center px-4 pb-16">
+          <div class="flex justify-center space-x-4 w-full">
+            <div class="w-full md:w-1/2 lg:w-1/3 rounded items-center">
+              <div class="rounded-lg overflow-hidden flex flex-col items-center p-4 shadow-md card card1 text-center">
+                <div class="content">
+                  <div class="w-full h-full rounded flex text-center">
+                    <img src="../../assets/images/cards/MEMBER.png" alt="" class="rounded">
+                  </div>
+                  <!-- <p class="heading">Card Hover Effect</p>
                 <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium eligendi hic
                   nesciunt corrupti ipsam
                   autem saepe voluptas, minus fugit voluptatem magni ex sint, doloribus voluptatibus, esse facilis
                   tenetur architecto nemo? </p> -->
-                <button class="button">REGISTER </button>
+                  <button class="button">REGISTER </button>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="w-full md:w-1/2 lg:w-1/3 rounded">
-            <div class="rounded-lg overflow-hidden flex flex-col items-center p-4 shadow-md card card2">
-              <div class="content">
+            <div class="w-full md:w-1/2 lg:w-1/3 rounded">
+              <div class="rounded-lg overflow-hidden flex flex-col items-center p-4 shadow-md card card2">
+                <div class="content">
 
-                <div class="w-full h-full rounded flex text-center">
-                  <img src="../../assets/images/cards//PROJECTS.png" alt="" class="rounded">
+                  <div class="w-full h-full rounded flex text-center">
+                    <img src="../../assets/images/cards//PROJECTS.png" alt="" class="rounded">
+                  </div>
+                  <button class="button">READ MORE</button>
                 </div>
-                <button class="button">READ MORE</button>
               </div>
             </div>
-          </div>
 
-          <div class="w-full md:w-1/2 lg:w-1/3 rounded">
-            <div class="rounded-lg overflow-hidden flex flex-col items-center p-4 shadow-md card card3">
-              <div class="content">
+            <div class="w-full md:w-1/2 lg:w-1/3 rounded">
+              <div class="rounded-lg overflow-hidden flex flex-col items-center p-4 shadow-md card card3">
+                <div class="content">
 
-                <div class="w-full h-full rounded flex text-center">
-                  <img src="../../assets/images/cards/DONATION.png" alt="" class="rounded">
+                  <div class="w-full h-full rounded flex text-center">
+                    <img src="../../assets/images/cards/DONATION.png" alt="" class="rounded">
+                  </div>
+                  <button class="button"> DONATE NOW</button>
                 </div>
-                <button class="button"> DONATE NOW</button>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section>
-      <div class="container py-8">
+      </section>
+      <section class="blogs">
+        <div class="container py-8">
+          <div class="heading text-center">
+            <h1 class="title">Latest Blogs . . .</h1>
+            <h2 class="sub-title">We Help Poor Children to Get a Better Life.</h2>
+          </div>
+          <div class="flex flex-wrap py-16 ">
+            <div class="w-full lg:w-1/2 px-4">
+              <div class="flex space-x-4">
+                <div class="w-8/12 help-man hoverimg  relative p-8">
+                  <a routerLinkActive="active" [routerLink]="['contactus']" class="">
+                    <div class="">
+                      <div class="aspect-w-16 aspect-h-9">
+                        <img alt="man" class="object-cover w-full h-full  rounded"
+                          src="../../assets/images/blogs/blog 1.png">
+                      </div>
+                      <!-- <h5 class="absolute bottom-4 left-4 text-white bg-gray-900">We help more than 23k children every
+                      year</h5> -->
+                    </div>
+                    <div class="overlay"></div>
+                  </a>
+                </div>
+                <div class="w-4/12 blog-card">
+                  <div class="help-man hoverimg mt-4 relative p-4">
+                    <a routerLinkActive="active" [routerLink]="['contactus']">
+                      <div class="aspect-w-16 aspect-h-9">
+                        <img alt="man" class="object-cover w-full h-full rounded"
+                          src="../../assets/images/blogs/blog page 2.png">
+                      </div>
+                      <div class="overlay"></div>
+                    </a>
+                  </div>
+                  <div class="help-man hoverimg mt-4 relative ">
+                    <a routerLinkActive="active" [routerLink]="['contactus']">
+                      <div class="aspect-w-16 aspect-h-9">
+                        <img alt="man" class="object-cover w-full h-full rounded"
+                          src="../../assets/images/blogs/blog page 3.png">
+                      </div>
+                      <div class="overlay"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full lg:w-1/2 px-4 flex justify-center  ">
+              <div class="help-man-data text-left p-8">
+                <p class="text-xl">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas magna at porttitor vehicula.
+                  Nam augue lorem, consectetur adipiscing elit. Lorem ipsum, dolor sit amet consectetur adipisicing
+                  elit.
+                  Vitae officia pariatur a iusto aut optio, aliquam quis
+                  sit explicabo tenetur est deserunt corrupti veritatis dolore quisquam adipisci modi alias quod.
+                </p>
+
+                <button class="button mt-4 text-lg"> READ MORE </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-16 px-16 reports">
+        <div class="container">
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="nonprofit flex flex-col items-center justify-center py-4 px-16">
+              <img alt="shaps" src="../../assets/icons/finished.png"
+                class="rounded-full reports-bg hover:opacity-75 py-2">
+              <p class="font-bold font-ubuntu text-center py-4">Nonprofit partners create access to opportunities for
+              </p>
+              <div class="flex justify-center items-center py-4">
+                <h2 class="text-center text-6xl font-bold">
+                  100 <span class="text-3xl">+</span>
+                </h2>
+              </div>
+              <h6 class="text-2xl font-bold">Finished Projects</h6>
+            </div>
+            <div class="nonprofit flex flex-col items-center justify-center py-4 px-16">
+              <img alt="shaps" src="../../assets/icons/money and book.png"
+                class="rounded-full reports-bg hover:opacity-75 py-2">
+              <p class="font-bold font-ubuntu text-center py-4">Nonprofit partners create access to opportunities for
+              </p>
+              <div class="flex justify-center items-center py-4">
+                <h2 class="text-center  text-6xl font-bold">
+                  102 <span class="text-3xl">+</span>
+                </h2>
+              </div>
+              <h6 class="text-2xl font-bold">MONEY AND BOOK</h6>
+            </div>
+            <div class="nonprofit flex flex-col items-center justify-center py-4 px-16">
+              <img alt="shaps" src="../../assets/icons/under construction.png"
+                class="rounded-full reports-bg hover:opacity-75 py-2">
+              <p class="font-bold font-ubuntu text-center py-4">Nonprofit partners create access to opportunities for
+              </p>
+              <div class="flex justify-center items-center py-4">
+                <h2 class="text-center text-6xl font-bold">
+                  103 <span class="text-3xl">+</span>
+                </h2>
+              </div>
+              <h6 class="text-2xl font-bold">Under Construction</h6>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-16 px-16 campaign">
+        <app-campaign-container></app-campaign-container>
+      </section>
+      <section class="py-16 px-16 donation-section" style="height: 850px; width:100%">
         <div class="heading text-center">
-          <h1 class="title">Latest Blogs . . .</h1>
+          <h1 class="title">Donation Section.</h1>
           <h2 class="sub-title">We Help Poor Children to Get a Better Life.</h2>
         </div>
-        <div class="flex flex-wrap py-4 ">
-          <div class="w-full lg:w-1/2 px-4">
-            <div class="flex space-x-4">
-              <div class="w-8/12">
-                <a routerLinkActive="active" [routerLink]="['contactus']">
-                  <div class="help-man hoverimg relative">
-                    <div class="aspect-w-16 aspect-h-9">
-                      <img alt="man" class="object-cover w-full h-full  rounded"
-                        src="../../assets/images/blogs/blog 1.png">
-                    </div>
-                    <h5 class="absolute bottom-4 left-4 text-white bg-gray-900">We help more than 23k children every
-                      year</h5>
-                  </div>
-                </a>
-              </div>
-              <div class="w-4/12">
-                <div class="help-man hoverimg relative">
-                  <a routerLinkActive="active" [routerLink]="['contactus']">
-                    <div class="aspect-w-16 aspect-h-9">
-                      <img alt="man" class="object-cover w-full h-full rounded"
-                        src="../../assets/images/blogs/blog page 2.png">
-                    </div>
-                  </a>
-                </div>
-                <div class="help-man hoverimg mt-4 relative">
-                  <a routerLinkActive="active" [routerLink]="['contactus']">
-                    <div class="aspect-w-16 aspect-h-9">
-                      <img alt="man" class="object-cover w-full h-full rounded"
-                        src="../../assets/images/blogs/blog page 3.png">
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="w-full lg:w-1/2 px-4 flex justify-center  ">
-            <div class="help-man-data text-left p-4">
-              <p class="text-xl">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas magna at porttitor vehicula.
-                Nam augue lorem, consectetur adipiscing elit.
-              </p>
-              <ul class="p-4"> <!-- Added py-2 class for padding-y -->
-                <li class="py-4">
-                  <div class="flex items-center">
-                    <div class="w-4 h-4 rounded-full bg-black mr-2"></div>
-                    <span>Creating brands people trust.</span>
-                  </div>
-                </li>
-                <li class="py-4">
-                  <div class="flex items-center">
-                    <div class="w-4 h-4 rounded-full bg-black mr-2"></div>
-                    <span>Helping charities and non-profits to do good.</span>
-                  </div>
-                </li>
-                <li class="py-4">
-                  <div class="flex items-center">
-                    <div class="w-4 h-4 rounded-full bg-black mr-2"></div>
-                    <span>Doing what you do best, changing the world.</span>
-                  </div>
-                </li>
-              </ul>
-              <button class="button mt-4 text-lg"> READ MORE </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="REPORTS py-16 px-16">
-      <div class="container">
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <div class="nonprofit flex flex-col items-center justify-center">
-            <img alt="shaps" src="../../assets/icons/finished.png" class="rounded-full bg-yellow-200 hover:opacity-75">
-            <p class="font-bold font-ubuntu text-center">Nonprofit partners create access to opportunities for </p>
-            <div class="flex justify-center items-center">
-              <h2 class="text-center text-green-500 text-6xl font-bold">
-                100 <span class="text-3xl">+</span>
-              </h2>
-            </div>
-            <h6 class="text-2xl font-bold">Finished Projects</h6>
-          </div>
-          <div class="nonprofit flex flex-col items-center justify-center">
-            <img alt="shaps" src="../../assets/icons/money and book.png"
-              class="rounded-full bg-yellow-200 hover:opacity-75">
-            <p class="font-bold font-ubuntu text-center">Nonprofit partners create access to opportunities for </p>
-            <div class="flex justify-center items-center">
-              <h2 class="text-center text-green-500 text-6xl font-bold">
-                102 <span class="text-3xl">+</span>
-              </h2>
-            </div>
-            <h6 class="text-2xl font-bold">MONEY AND BOOK</h6>
-          </div>
-          <div class="nonprofit flex flex-col items-center justify-center">
-            <img alt="shaps" src="../../assets/icons/under construction.png"
-              class="rounded-full bg-yellow-200 hover:opacity-75">
-            <p class="font-bold font-ubuntu text-center">Nonprofit partners create access to opportunities for </p>
-            <div class="flex justify-center items-center">
-              <h2 class="text-center text-green-500 text-6xl font-bold">
-                103 <span class="text-3xl">+</span>
-              </h2>
-            </div>
-            <h6 class="text-2xl font-bold">Under Construction</h6>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-16 px-16 Campaign">
-      <app-campaign-container></app-campaign-container>
-    </section>
-    <section class="py-16 px-16 donation-section" style="height: 850px; width:100%">
-      <div class="heading text-center">
-        <h1 class="title">Donatio Section.</h1>
-        <h2 class="sub-title">We Help Poor Children to Get a Better Life.</h2>
-      </div>
-      <!-- <div class="container" >
+        <!-- <div class="container" >
         <div class="flex justify-end">
           <div class="w-1/2 bg-opacity-75 bg-blue-500">
             <div class="homeless p-4">
@@ -264,127 +256,150 @@
           </div>
         </div>
       </div> -->
-    </section>
-    <section class="py-16 px-32">
-      <div class="container py-8">
-        <div class="heading text-center">
-          <h1 class="title">working on charity</h1>
-          <h2 class="sub-title">Upcoming Events</h2>
+      </section>
+      <section class="py-16 px-32 evets">
+        <div class="container py-8">
+          <div class="heading text-center">
+            <h1 class="title">working on charity</h1>
+            <h2 class="sub-title">Upcoming Events</h2>
+          </div>
         </div>
-      </div>
-      <div class="container">
-        <div class="flex justify-center space-x-4 w-full gap gap-16">
+        <div class="container">
+          <div class="flex justify-center space-x-4 w-full gap gap-16">
+            <!--  -->
 
-          <div class="w-full md:w-1/2 lg:w-1/3 rounded">
-            <div class="rounded-lg overflow-hidden flex flex-col items-center  shadow-md  ">
-              <div class="content w-full  items-center text-center ">
-                <div class="w-full h-full rounded flex text-center " class="">
-                  <div class="image-container relative">
-                    <img alt="upcoming-events" src="../../assets/images/events/events 1.png"
-                      class="w-full h-full rounded">
-                    <div
-                      class="image-overlay absolute top-0 left-0 w-full h-full bg-green-500 opacity-0 transition-opacity duration-300">
-                      <a href="event-details.html" class="mat-icon-container">
-                        <mat-icon class="mat-icon">arrow_forward</mat-icon>
-                      </a>
+            <div class="w-full md:w-1/2 lg:w-1/3 rounded">
+              <div class="rounded-lg overflow-hidden flex flex-col items-center  shadow-md  ">
+                <div class="content w-full  items-center text-center ">
+                  <div class="w-full h-full rounded flex text-center " class="">
+                    <div class="flex flex-col items-center justify-center h-full relative">
+                      <div class="relative">
+                        <div class="image-container rounded-lg">
+                          <img alt="upcoming-events" src="../../assets/images/events/events 1.png"
+                            class="w-full h-full rounded-md">
+                          <div
+                            class="image-overlay absolute top-0 left-0 w-full h-full event-bg-overlay opacity-0 transition-opacity duration-300">
+                          </div>
+                        </div>
+
+                        <div class=" bg-gray-900 text-left  py-4 -mt-10 mx-10 rounded-md event-time-container">
+                          <div class="upcoming-event-time flex justify-between  rounded">
+                            <h4 class="flex-1 pr-2">27<span>Jul<br>2023</span></h4>
+                            <div class="upcoming-event-separator px-1"></div>
+                            <h4 class="flex-1 pl-2">30<span>sep<br>2023</span></h4>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="upcoming-event-time flex justify-between bg-green-500 rounded">
-                    <h4 class="flex-1">27<span>Jul<br>2023</span></h4>
-                    <div class="upcoming-event-separator"></div>
-                    <h4 class="flex-1">30<span>sep<br>2023</span></h4>
+
+                  <div class="upcoming-event-data bg-white text-left px-8 py-4">
+                    <a href="event-details.html">
+                      <h3 class="text-xl font-bold text-gray-700">Trustee Leadership Programe Spring 2023</h3>
+                    </a>
+                    <h6 class="py-4"> <mat-icon style="color: #ff3636;">av_timer</mat-icon> 1:00 pm - 1:00 pm </h6>
+                    <h6 class="py-2"><mat-icon style="color: #ff3636;"> location_on</mat-icon>Manchester, Kentucky
+                      39495, USA</h6>
                   </div>
                 </div>
-                <div class="upcoming-event-data bg-white text-left px-8 py-4">
-                  <a href="event-details.html">
-                    <h3 class="text-xl font-bold text-gray-700">Trustee Leadership Programe Spring 2023</h3>
-                  </a>
-                  <h6 class="py-4"> <mat-icon style="color: #ff3636;">av_timer</mat-icon> 1:00 pm - 1:00 pm </h6>
-                  <h6 class="py-2"><mat-icon style="color: #ff3636;"> location_on</mat-icon>Manchester, Kentucky
-                    39495, USA</h6>
+              </div>
+            </div>
+            <div class="w-full md:w-1/2 lg:w-1/3 rounded">
+              <div class="rounded-lg overflow-hidden flex flex-col items-center  shadow-md  ">
+                <div class="content w-full  items-center text-center ">
+                  <div class="w-full h-full rounded flex text-center " class="">
+                    <div class="flex flex-col items-center justify-center h-full relative">
+                      <div class="relative">
+                        <div class="image-container rounded-lg">
+                          <img alt="upcoming-events" src="../../assets/images/events/events 2.png"
+                            class="w-full h-full rounded-md">
+                          <div
+                            class="image-overlay absolute top-0 left-0 w-full h-full event-bg-overlay opacity-0 transition-opacity duration-300">
+                          </div>
+                        </div>
+
+                        <div class=" bg-gray-900 text-left  py-4 -mt-10 mx-10 rounded-md event-time-container">
+                          <div class="upcoming-event-time flex justify-between  rounded">
+                            <h4 class="flex-1 pr-2">27<span>Jul<br>2023</span></h4>
+                            <div class="upcoming-event-separator px-1"></div>
+                            <h4 class="flex-1 pl-2">30<span>sep<br>2023</span></h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="upcoming-event-data bg-white text-left px-8 py-4">
+                    <a href="event-details.html">
+                      <h3 class="text-xl font-bold text-gray-700">Trustee Leadership Programe Spring 2023</h3>
+                    </a>
+                    <h6 class="py-4"> <mat-icon style="color: #ff3636;">av_timer</mat-icon> 1:00 pm - 1:00 pm </h6>
+                    <h6 class="py-2"><mat-icon style="color: #ff3636;"> location_on</mat-icon>Manchester, Kentucky
+                      39495, USA</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-1/2 lg:w-1/3 rounded">
+              <div class="rounded-lg overflow-hidden flex flex-col items-center  shadow-md  ">
+                <div class="content w-full  items-center text-center ">
+                  <div class="w-full h-full rounded flex text-center " class="">
+                    <div class="flex flex-col items-center justify-center h-full relative">
+                      <div class="relative">
+                        <div class="image-container rounded-lg">
+                          <img alt="upcoming-events" src="../../assets/images/events/events 3.png"
+                            class="w-full h-full rounded-md">
+                          <div
+                            class="image-overlay absolute top-0 left-0 w-full h-full event-bg-overlay opacity-0 transition-opacity duration-300">
+                          </div>
+                        </div>
+
+                        <div class=" bg-gray-900 text-left  py-4 -mt-10 mx-10 rounded-md event-time-container">
+                          <div class="upcoming-event-time flex justify-between  rounded">
+                            <h4 class="flex-1 pr-2">27<span>Jul<br>2023</span></h4>
+                            <div class="upcoming-event-separator px-1"></div>
+                            <h4 class="flex-1 pl-2">30<span>sep<br>2023</span></h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="upcoming-event-data bg-white text-left px-8 py-4">
+                    <a href="event-details.html">
+                      <h3 class="text-xl font-bold text-gray-700">Trustee Leadership Programe Spring 2023</h3>
+                    </a>
+                    <h6 class="py-4"> <mat-icon style="color: #ff3636;">av_timer</mat-icon> 1:00 pm - 1:00 pm </h6>
+                    <h6 class="py-2"><mat-icon style="color: #ff3636;"> location_on</mat-icon>Manchester, Kentucky
+                      39495, USA</h6>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="w-full md:w-1/2 lg:w-1/3 rounded">
-            <div class="rounded-lg overflow-hidden flex flex-col items-center  shadow-md  ">
-              <div class="content w-full  items-center text-center ">
-                <div class="w-full h-full rounded flex text-center " class="">
-                  <div class="image-container relative">
-                    <img alt="upcoming-events" src="../../assets/images/events/events 2.png"
-                      class="w-full h-full rounded">
-                    <div
-                      class="image-overlay absolute top-0 left-0 w-full h-full bg-green-500 opacity-0 transition-opacity duration-300">
-                    </div>
-                  </div>
-                  <div class="upcoming-event-time flex justify-between bg-green-500 rounded">
-                    <h4 class="flex-1">27<span>Jul<br>2023</span></h4>
-                    <div class="upcoming-event-separator"></div>
-                    <h4 class="flex-1">30<span>sep<br>2023</span></h4>
-                  </div>
-                </div>
-                <div class="upcoming-event-data bg-white text-left px-8 py-4">
-                  <a href="event-details.html">
-                    <h3 class="text-xl font-bold text-gray-700">Trustee Leadership Programe Spring 2023</h3>
-                  </a>
-                  <h6 class="py-4"> <mat-icon style="color: #ff3636;">av_timer</mat-icon> 1:00 pm - 1:00 pm </h6>
-                  <h6 class="py-2"><mat-icon style="color: #ff3636;"> location_on</mat-icon>Manchester, Kentucky
-                    39495, USA</h6>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="w-full md:w-1/2 lg:w-1/3 rounded">
-            <div class="rounded-lg overflow-hidden flex flex-col items-center  shadow-md  ">
-              <div class="content w-full  items-center text-center ">
-                <div class="w-full h-full rounded flex text-center " class="">
-                  <div class="image-container relative">
-                    <img alt="upcoming-events" src="../../assets/images/events/events 3.png"
-                      class="w-full h-full rounded">
-                    <div
-                      class="image-overlay absolute top-0 left-0 w-full h-full bg-green-500 opacity-0 transition-opacity duration-300">
-                    </div>
-                  </div>
-                  <div class="upcoming-event-time flex justify-between bg-green-500 rounded">
-                    <h4 class="flex-1">27<span>Jul<br>2023</span></h4>
-                    <div class="upcoming-event-separator"></div>
-                    <h4 class="flex-1">30<span>sep<br>2023</span></h4>
-                  </div>
-                </div>
-                <div class="upcoming-event-data bg-white text-left px-8 py-4">
-                  <a href="event-details.html">
-                    <h3 class="text-xl font-bold text-gray-700">Trustee Leadership Programe Spring 2023</h3>
-                  </a>
-                  <h6 class="py-4"> <mat-icon style="color: #ff3636;">av_timer</mat-icon> 1:00 pm - 1:00 pm </h6>
-                  <h6 class="py-2"><mat-icon style="color: #ff3636;"> location_on</mat-icon>Manchester, Kentucky
-                    39495, USA</h6>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
-    <section class="py-16 px-16">
-      <div class="container py-8">
-        <div class="heading text-center">
-          <h1 class="title">Charity Gifts</h1>
-          <h2 class="sub-title">Shop from Us </h2>
+      </section>
+      <section class="py-16 px-32 shop">
+        <div class="container py-8">
+          <div class="heading text-center">
+            <h1 class="title">Charity Gifts</h1>
+            <h2 class="sub-title">Shop from Us </h2>
+          </div>
+          <app-shop-container class="py-8">
+
+          </app-shop-container>
         </div>
-        <app-shop-container>
 
-        </app-shop-container>
-      </div>
-
-    </section>
-    <section class="py-16 px-16">
-      <owl-carousel-o [options]="partnersOptions" (translated)="getPassedData($event)">
-        <ng-container *ngFor="let slide of partnersSlides">
-          <ng-template carouselSlide [id]="slide.id">
-            <img [src]="slide.src" [alt]="slide.alt" [title]="slide.title">
-          </ng-template>
-        </ng-container>
-      </owl-carousel-o>
+      </section>
+      <section class="py-16 px-16">
+        <owl-carousel-o [options]="partnersOptions" (translated)="getPassedData($event)">
+          <ng-container *ngFor="let slide of partnersSlides">
+            <ng-template carouselSlide [id]="slide.id">
+              <img [src]="slide.src" [alt]="slide.alt" [title]="slide.title">
+            </ng-template>
+          </ng-container>
+        </owl-carousel-o>
+      </section>
     </section>
   </div>
 </div>

@@ -1,12 +1,12 @@
-::ng-deep .owl-theme .owl-dots .owl-dot span {
+:host ::ng-deep .owl-theme .owl-dots .owl-dot span {
   background: #D6D6D6!important; /* dots color*/
 }
 
-::ng-deep .owl-theme .owl-dots .owl-dot.active span,
+:host ::ng-deep .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
   background: #FCAC45!important; /*active and on hover color*/
 }
-::ng-deep .owl-theme .owl-dots {
+:host ::ng-deep .owl-theme .owl-dots {
   position: absolute;
   left: 10px; /* Adjust the value to set the desired padding from the left */
   top: 50%;
@@ -17,11 +17,11 @@
   justify-content: center; /* Adjust the alignment as needed */
 }
 
-::ng-deep .owl-theme .owl-dot {
+:host ::ng-deep .owl-theme .owl-dot {
   margin-bottom: 10px; /* Adjust the value to set the desired spacing between dots */
 }
 
-::ng-deep .owl-theme .owl-dot span {
+:host ::ng-deep .owl-theme .owl-dot span {
   display: block;
   width: 10px;
   height: 10px;
@@ -29,6 +29,6 @@
   background-color: #000;
 }
 
-::ng-deep .owl-theme .owl-dot.active span {
+:host ::ng-deep .owl-theme .owl-dot.active span {
   background-color: #f00;
 }
