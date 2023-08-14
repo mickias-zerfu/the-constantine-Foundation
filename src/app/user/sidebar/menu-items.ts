@@ -11,7 +11,7 @@ export const ROUTES: RouteInfo[] = [
     submenu: []
   },
   {
-    path: '/blogs-managment',
+    path: '/blogs-management',
     title: 'Blogs Management',
     icon: 'people',
     class: '',

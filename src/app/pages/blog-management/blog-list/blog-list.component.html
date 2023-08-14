@@ -1,1 +1,57 @@
-<p>blog-list works!</p>
+<section class="body-wrapper w-full align-center text-center px-16">
+  <section class="hero-section bg-cover bg-center"
+    style="background-image: url('../../../../assets/images/Bg/footer.png'); background-size: cover;">
+    <div class="hero-content py-24">
+      <h2 class="text-4xl font-bold text-white">The Constantinople in News and Our Blogs</h2>
+    </div>
+  </section>
+
+  <section class="cards-container w-full py-8 px-8">
+    <div class="blog-container">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
+        <!-- Repeat the following code block for each blog -->
+        <div *ngFor="let blog of blogListObject; let i = index" class="blog-list-card"
+          [class.even-background]="evenBackground(i)" [class.odd-background]="oddBackground(i)">
+          <div class="card shadow-lg rounded-lg mx-8 my-8">
+            <div class="flex items-center mb-2">
+              <div class="ml-2">
+                <h4 class="w-12 font-bold text-xl">{{ blog.id }}</h4>
+              </div>
+              <div class="flex justify-center mb-4">
+                <img src="{{ blog.image_url }}" alt="Blog Image" class="w-48">
+              </div>
+            </div>
+            <div class="blog-detail">
+              <div class="content p-4">
+                <div class="text-left">
+                  <p class="font-bold">Title: {{ blog.title }}</p>
+                </div>
+                <div class="mt-4">
+                  <p class="truncate">{{ blog.content | slice:0:500 }}</p>
+                </div>
+                <div class="flex justify-between mt-4">
+                  <div>
+                    <p class="font-bold">Posted on:</p>
+                    <p>{{ blog.created_at }}</p>
+                  </div>
+                  <div>
+                    <p class="font-bold">Updated on:</p>
+                    <p>{{ blog.updated_at }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="action flex justify-center p-4">
+
+              <button class="button bg-red-600 hover:bg-red-800 text-white font-bold py-2 px-4 rounded" routerLinkActive="nav-link active"
+                [routerLink]="['../blog/view/' + blog.id]">
+                READ MORE
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- End of blog code block -->
+      </div>
+    </div>
+  </section>
+</section>

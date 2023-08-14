@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { postsInfo } from 'src/app/data/posts';
+import { BlogModel } from 'src/app/models/blog.model';
 
 @Component({
   selector: 'app-blog-management',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogManagementComponent implements OnInit {
 
+  blogListObject: BlogModel[];
   constructor() { }
 
   ngOnInit(): void {
+    this.blogListObject = postsInfo;
   }
 
 }

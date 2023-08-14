@@ -27,6 +27,7 @@ import { ShopContainerComponent } from './home-container/shop-container/shop-con
 import { CampaignContainerComponent } from './home-container/campaign-container/campaign-container.component';
 import { UserModule } from './user/user.module';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { BlogUpdateComponent } from './pages/blog-management/blog-update/blog-update.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
     BlogDetailComponent,
     ShopContainerComponent,
     CampaignContainerComponent,
-    DashboardComponent
+    DashboardComponent,
+    BlogUpdateComponent
   ],
   imports: [
     BrowserModule,

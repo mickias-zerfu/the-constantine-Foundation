@@ -7,6 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { MaterialModule } from '../material.module';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { AppModule } from '../app.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { AppModule } from '../app.module';
     FormsModule,
     HttpClientModule,
     MaterialModule,
+    RouterModule
   ],
   exports :[
     LoginComponent,

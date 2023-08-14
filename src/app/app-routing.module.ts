@@ -11,6 +11,7 @@ import { LoginComponent } from './user/login/login.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { BlogListComponent } from './pages/blog-management/blog-list/blog-list.component';
 import { BlogDetailComponent } from './pages/blog-management/blog-detail/blog-detail.component';
+import { BlogUpdateComponent } from './pages/blog-management/blog-update/blog-update.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "/home", pathMatch: "full" },
@@ -21,7 +22,8 @@ const routes: Routes = [
   { path: "blogs-management", component: BlogManagementComponent },
   { path: "create-blog", component: BlogCreateComponent },
   { path: "blogs", component: BlogListComponent },
-  { path: "view:id", component: BlogDetailComponent },
+  { path: "blog/view/:id", component: BlogDetailComponent },
+  { path: "blog/update/:id", component: BlogUpdateComponent },
   // Projects
   { path: "projects", component: ProjectManagementComponent },
   // Events
