@@ -1,0 +1,25 @@
+
+  <nav class="sidebar-nav">
+      <ul id="sidebarnav">
+          <li class="sidebar-item"><img class="avatar mat-elevation-z8 rounded"
+                  src="../../../assets/images/user_avatar.png" />
+              <h4 class="name">John Smith</h4>
+              <p class="designation">Software Engineer</p>
+
+              <mat-divider></mat-divider>
+          </li>
+          <li class="sidebar-item" [class.active]="showMenu === sidebarnavItem.title"
+              *ngFor="let sidebarnavItem of sidebarnavItems" >
+              <div class="nav-small-cap" *ngIf="sidebarnavItem.extralink === true">{{sidebarnavItem.title}}</div>
+              <a class="sidebar-link waves-effect waves-dark"
+                  [ngClass]="[sidebarnavItem.class]" *ngIf="!sidebarnavItem.extralink;"
+                  (click)="addExpandClass(sidebarnavItem.title)" >
+
+                  <span>
+                      <mat-icon>{{sidebarnavItem.icon}}</mat-icon>
+                  </span><span class="hide-menum">{{sidebarnavItem.title}}</span>
+              </a>
+          </li>
+      </ul>
+  </nav>
+

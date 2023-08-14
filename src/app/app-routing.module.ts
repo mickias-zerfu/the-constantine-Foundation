@@ -7,16 +7,27 @@ import { EventManagementComponent } from './pages/event-management/event-managem
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { BlogCreateComponent } from './pages/blog-management/blog-create/blog-create.component';
+import { LoginComponent } from './user/login/login.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { BlogListComponent } from './pages/blog-management/blog-list/blog-list.component';
+import { BlogDetailComponent } from './pages/blog-management/blog-detail/blog-detail.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "/home", pathMatch: "full" },
   { path: "home", component: HomeContainerComponent },
+  { path: "login", component: LoginComponent },
+  { path: "dashboard", component: DashboardComponent },
+  // Blogs
   { path: "blogs-management", component: BlogManagementComponent },
   { path: "create-blog", component: BlogCreateComponent },
-  { path: "blogs", component: BlogManagementComponent },
-  { path: "view:id", component: BlogManagementComponent },
+  { path: "blogs", component: BlogListComponent },
+  { path: "view:id", component: BlogDetailComponent },
+  // Projects
   { path: "projects", component: ProjectManagementComponent },
+  // Events
   { path: "events", component: EventManagementComponent },
+  // Shops
+
   { path: "about-us", component: AboutUsComponent },
   { path: "contact-us", component: ContactUsComponent },
 ]

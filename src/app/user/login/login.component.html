@@ -1,0 +1,28 @@
+<div class="flex h-screen items-center justify-center bg-gray-100">
+  <form (ngSubmit)="login()" class="w-full max-w-sm bg-white rounded-lg shadow-lg p-6">
+    <div class="text-center">
+      <img class="w-24 mx-auto mb-6" alt="Logo" src="../../../assets/icons/finished.png" />
+      <h2 class="text-3xl font-bold text-gray-800">MOLSA</h2>
+    </div>
+    <div class="mt-8">
+      <mat-form-field appearance="outline" class="w-full shadow-neumaorphic">
+        <mat-label>Username</mat-label>
+        <input matInput name="username" type="text" placeholder="Username" required [(ngModel)]="loginModel.userName" />
+      </mat-form-field>
+    </div>
+    <div class="mt-4">
+      <mat-form-field appearance="outline" class="w-full shadow-neumoraphic">
+        <mat-label>Password</mat-label>
+        <input matInput name="password" type="password" placeholder="Password" required [(ngModel)]="loginModel.password" />
+      </mat-form-field>
+    </div>
+    <div class="mt-6">
+      <button class="w-full bg-gray-100 hover:bg-gray-200 text-gray-800 font-bold py-2 px-4 rounded-lg shadow-neumorphic">
+        Login
+      </button>
+    </div>
+    <div class="mt-4 text-center text-red-500" *ngIf="loginFailed">
+      <span class="badge">The username or password is incorrect. Try again or contact support.</span>
+    </div>
+  </form>
+</div>

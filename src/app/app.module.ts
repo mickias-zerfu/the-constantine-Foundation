@@ -25,6 +25,8 @@ import { BlogListComponent } from './pages/blog-management/blog-list/blog-list.c
 import { BlogDetailComponent } from './pages/blog-management/blog-detail/blog-detail.component';
 import { ShopContainerComponent } from './home-container/shop-container/shop-container.component';
 import { CampaignContainerComponent } from './home-container/campaign-container/campaign-container.component';
+import { UserModule } from './user/user.module';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,8 @@ import { CampaignContainerComponent } from './home-container/campaign-container/
     BlogListComponent,
     BlogDetailComponent,
     ShopContainerComponent,
-    CampaignContainerComponent
+    CampaignContainerComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -51,6 +54,7 @@ import { CampaignContainerComponent } from './home-container/campaign-container/
     ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    UserModule,
     MaterialModule,
     CarouselModule
   ],

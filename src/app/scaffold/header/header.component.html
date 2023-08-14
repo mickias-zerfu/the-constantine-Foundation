@@ -1,6 +1,8 @@
 <div class="headerContainer">
   <div class="phone-number flex justify-end py-2 pr-4">
-    <span class="text-gray-800 font-bold"><mat-icon >person</mat-icon> Login</span>
+    <a routerLinkActive="active" [routerLink]="['login']" class="btn text-white font-bold">
+      <span class="text-gray-800 font-bold"><mat-icon>person</mat-icon> Login</span>
+    </a>
   </div>
   <div id="menu-first-row" class="header-with-shadow rounded shadow-md  mx-16">
     <div class="menus  rounded-lg">
@@ -21,37 +23,44 @@
           <ul class="flex items-center list-none space-x-4 w-full  text-1xl ">
             <li class="flex-grow">
               <button class="learn-more">
-                <a class="button-text hover:font-bold" routerLinkActive="nav-link active" [routerLink]="['home']">Home</a>
+                <a class="button-text hover:font-bold" routerLinkActive="nav-link active"
+                  [routerLink]="['home']">Home</a>
               </button>
             </li>
             <li class="flex-grow">
               <button class="learn-more">
-                <a class="button-text hover:font-bold" routerLinkActive="nav-link active" [routerLink]="['shops']">Shop</a>
+                <a class="button-text hover:font-bold" routerLinkActive="nav-link active"
+                  [routerLink]="['shops']">Shop</a>
               </button>
             </li>
             <li class="flex-grow">
               <button class="learn-more">
-                <a class="button-text hover:font-bold" routerLinkActive="nav-link active" [routerLink]="['blogs']">Blogs</a>
+                <a class="button-text hover:font-bold" routerLinkActive="nav-link active"
+                  [routerLink]="['blogs']">Blogs</a>
               </button>
             </li>
             <li class="flex-grow">
               <button class="learn-more">
-                <a class="button-text hover:font-bold" routerLinkActive="nav-link active" [routerLink]="['projects']">Projects</a>
+                <a class="button-text hover:font-bold" routerLinkActive="nav-link active"
+                  [routerLink]="['projects']">Projects</a>
               </button>
             </li>
             <li class="flex-grow">
               <button class="learn-more">
-                <a class="button-text hover:font-bold" routerLinkActive="nav-link active" [routerLink]="['events']">Events</a>
+                <a class="button-text hover:font-bold" routerLinkActive="nav-link active"
+                  [routerLink]="['events']">Events</a>
               </button>
             </li>
             <li class="flex-grow">
               <button class="learn-more">
-                <a class="button-text hover:font-bold" routerLinkActive="nav-link active" [routerLink]="['about-us']">About</a>
+                <a class="button-text hover:font-bold" routerLinkActive="nav-link active"
+                  [routerLink]="['about-us']">About</a>
               </button>
             </li>
             <li class="flex-grow">
               <button class="learn-more">
-                <a class="button-text hover:font-bold" routerLinkActive="nav-link active" [routerLink]="['contact-us']">Contact</a>
+                <a class="button-text hover:font-bold" routerLinkActive="nav-link active"
+                  [routerLink]="['contact-us']">Contact</a>
               </button>
             </li>
           </ul>
@@ -60,7 +69,7 @@
       </div>
       <div class="menu right-menu flex justify-end rounded  ">
         <ul class="menu menuitems">
-          <li class="donation w-full" >
+          <li class="donation w-full">
             <a routerLinkActive="active" [routerLink]="['donate']" class="btn text-white font-bold">
               <button class="button w-full">Donate Now </button>
             </a>
