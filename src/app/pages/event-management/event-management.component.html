@@ -1,1 +1,58 @@
-<p>event-management works!</p>
+
+<section class="pt-32 px-16">
+  <div class="flex">
+    <app-sidebar></app-sidebar>
+    <section class="body-wrapper w-full align-center text-center px-16">
+      <section class="cards-container w-full">
+        <div class="event-container">
+          <div class="header-container text-right align-right p-4 m-8 rounded shadow-md ">
+            <button class="detail btn-custom" routerLinkActive="nav-link active" [routerLink]="['../event/create-event']">
+              Add events
+            </button>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <!-- Repeat the following code block for each event -->
+            <div *ngFor="let event of eventListObject" class="event-list-card">
+              <div class="card shadow-lg rounded-lg">
+                <div class="flex items-center mb-2">
+                  <div class="ml-2">
+                    <h4 class="w-12 font-bold text-xl">{{ event.id }}</h4>
+                  </div>
+                  <div class="flex justify-center mb-4">
+                    <img src="{{ event.image_url }}" alt="event Image" class="w-48">
+                  </div>
+                </div>
+                <div class="event-detail">
+                  <div class="content p-4">
+                    <div class="text-left">
+                      <p class="font-bold">Title: {{ event.name }}</p>
+                    </div>
+                    <div class="mt-4">
+                      <p class="truncate">{{ event.description }}</p>
+                    </div>
+                    <div class="flex justify-between mt-4">
+                      <div>
+                        <p class="font-bold">Posted on:</p>
+                        <p>{{ event.created_at }}</p>
+                      </div>
+                      <div>
+                        <p class="font-bold">Updated on:</p>
+                        <p>{{ event.updated_at }}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="action flex justify-center p-4">
+                  <button class="detail btn-custom" routerLinkActive="nav-link active" [routerLink]="['../event/update/' + event.id]">
+                    View/Update
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- End of event code block -->
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+</section>

@@ -1,1 +1,58 @@
-<p>project-list works!</p>
+<section class="body-wrapper w-full align-center text-center px-16">
+  <section class="hero-section bg-cover bg-center pt-32"
+    style="background-image: url('../../../../assets/images/Bg/footer.png'); background-size: cover;">
+    <div class="container py-8">
+      <div class="heading text-center bg-gray-100">
+        <h1 class="title">Projects</h1>
+        <h2 class="sub-title">Finished and Under Construction</h2>
+      </div>
+    </div>
+  </section>
+  <section class="cards-container w-full py-8 px-8">
+    <div class="event-container">
+      <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-4">
+        <!-- Repeat the following code block for each project -->
+        <div *ngFor="let project of projectListObject; let i = index" class="project-list-card" >
+          <div class="card shadow-lg rounded-lg mx-8 my-8">
+            <div class="flex items-center mb-2">
+              <div class="ml-2">
+                <h4 class="w-12 font-bold text-xl">{{ project.id }}</h4>
+              </div>
+              <div class="flex justify-center mb-4">
+                <img src="{{ project.image_url }}" alt="project Image" class="w-48">
+              </div>
+            </div>
+            <div class="project-detail">
+              <div class="content p-4">
+                <div class="text-left">
+                  <p class="font-bold">Title: {{ project.name }}</p>
+                </div>
+                <div class="mt-4">
+                  <p class="truncate">{{ project.description | slice:0:500 }}</p>
+                </div>
+                <div class="flex justify-between mt-4">
+                  <div>
+                    <p class="font-bold">Posted on:</p>
+                    <p>{{ project.created_at }}</p>
+                  </div>
+                  <div>
+                    <p class="font-bold">Updated on:</p>
+                    <p>{{ project.updated_at }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="action flex justify-center p-4">
+
+              <button class="button bg-red-600 hover:bg-red-800 text-white font-bold py-2 px-4 rounded" routerLinkActive="nav-link active"
+                [routerLink]="['../project/view/' + project.id]">
+                READ MORE
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- End of project code block -->
+      </div>
+    </div>
+  </section>
+</section>

@@ -12,6 +12,16 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { BlogListComponent } from './pages/blog-management/blog-list/blog-list.component';
 import { BlogDetailComponent } from './pages/blog-management/blog-detail/blog-detail.component';
 import { BlogUpdateComponent } from './pages/blog-management/blog-update/blog-update.component';
+import { EventCreateComponent } from './pages/event-management/event-create/event-create.component';
+import { EventDetailComponent } from './pages/event-management/event-detail/event-detail.component';
+import { EventListComponent } from './pages/event-management/event-list/event-list.component';
+import { EventUpdateComponent } from './pages/event-management/event-update/event-update.component';
+import { ProjectCreateComponent } from './pages/project-management/project-create/project-create.component';
+import { ProjectDetailComponent } from './pages/project-management/project-detail/project-detail.component';
+import { ProjectListComponent } from './pages/project-management/project-list/project-list.component';
+import { ProjectUpdateComponent } from './pages/project-management/project-update/project-update.component';
+import { ProductListComponent } from './pages/shop/product-list/product-list.component';
+import { ShopContainerComponent } from './home-container/shop-container/shop-container.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "/home", pathMatch: "full" },
@@ -25,11 +35,24 @@ const routes: Routes = [
   { path: "blog/view/:id", component: BlogDetailComponent },
   { path: "blog/update/:id", component: BlogUpdateComponent },
   // Projects
-  { path: "projects", component: ProjectManagementComponent },
+  { path: "projects-management", component: ProjectManagementComponent },
+  { path: "project/create-project", component: ProjectCreateComponent },
+  { path: "projects", component: ProjectListComponent },
+  { path: "project/view/:id", component: ProjectDetailComponent },
+  { path: "project/update/:id", component: ProjectUpdateComponent },
   // Events
-  { path: "events", component: EventManagementComponent },
+  { path: "events-management", component: EventManagementComponent },
+  { path: "event/create-event", component: EventCreateComponent },
+  { path: "events", component: EventListComponent },
+  { path: "event/view/:id", component: EventDetailComponent },
+  { path: "event/update/:id", component: EventUpdateComponent },
   // Shops
-
+  { path: "shops", component: ShopContainerComponent },
+  { path: "shop/create-shop", component: ShopContainerComponent },
+  { path: "shops", component: ShopContainerComponent },
+  { path: "shop/view/:id", component: ShopContainerComponent },
+  { path: "shop/update/:id", component: ShopContainerComponent },
+// static pages
   { path: "about-us", component: AboutUsComponent },
   { path: "contact-us", component: ContactUsComponent },
 ]

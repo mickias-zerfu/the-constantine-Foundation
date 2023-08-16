@@ -1,0 +1,48 @@
+import { EventModel } from "../models/event.model";
+
+export const eventsInfo: EventModel[] = [
+  {
+    id: 1,
+    name: "Summer Music Festival",
+    description: "Join us for a day of live music performances from popular artists.",
+    start_date: "2023-08-20",
+    end_date: "2023-08-21",
+    budget: "$100,000",
+    created_at: "2023-08-15",
+    updated_at: "2023-08-15",
+    image_url: "https://via.placeholder.com/600/FFA73D",
+  },
+  {
+    id: 2,
+    name: "Tech Conference",
+    description: "Explore the latest technology trends and innovations.",
+    start_date: "2023-09-10",
+    end_date: "2023-09-12",
+    budget: "$250,000",
+    created_at: "2023-08-15",
+    updated_at: "2023-08-15",
+    image_url: "https://via.placeholder.com/600/FFA73D",
+  },
+  {
+    id: 3,
+    name: "Charity Gala Dinner",
+    description: "Join us for an evening of fine dining and fundraising for a good cause.",
+    start_date: "2023-10-05",
+    end_date: "2023-10-05",
+    budget: "$50,000",
+    created_at: "2023-08-15",
+    updated_at: "2023-08-15",
+    image_url: "https://via.placeholder.com/600/FFA73D",
+  },
+  {
+    id: 4,
+    name: "Product Launch Event",
+    description: "Be the first to witness the unveiling of our groundbreaking new product.",
+    start_date: "2023-11-15",
+    end_date: "2023-11-15",
+    budget: "$150,000",
+    created_at: "2023-08-15",
+    updated_at: "2023-08-15",
+    image_url: "https://via.placeholder.com/600/FFA73D",
+  },
+];
