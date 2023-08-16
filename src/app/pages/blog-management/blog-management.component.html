@@ -4,6 +4,11 @@
     <section class="body-wrapper w-full align-center text-center px-16">
       <section class="cards-container w-full">
         <div class="blog-container">
+          <div class="header-container text-right align-right p-4 m-8 rounded shadow-md ">
+            <button class="detail btn-custom" routerLinkActive="nav-link active" [routerLink]="['../blog/create-blog']">
+              Add Blogs
+            </button>
+          </div>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
             <!-- Repeat the following code block for each blog -->
             <div *ngFor="let blog of blogListObject" class="blog-list-card">

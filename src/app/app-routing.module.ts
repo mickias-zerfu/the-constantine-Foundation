@@ -20,7 +20,7 @@ const routes: Routes = [
   { path: "dashboard", component: DashboardComponent },
   // Blogs
   { path: "blogs-management", component: BlogManagementComponent },
-  { path: "create-blog", component: BlogCreateComponent },
+  { path: "blog/create-blog", component: BlogCreateComponent },
   { path: "blogs", component: BlogListComponent },
   { path: "blog/view/:id", component: BlogDetailComponent },
   { path: "blog/update/:id", component: BlogUpdateComponent },
