@@ -15,6 +15,7 @@ export class BlogService {
     const url = `${this.apiUrl}/${id}`;
     return this.http.get<BlogModel>(url);
   }
+  addBlog(){}
 
   updateBlogContent(id: number, content: string): Observable<BlogModel> {
     const url = `${this.apiUrl}/${id}`;
