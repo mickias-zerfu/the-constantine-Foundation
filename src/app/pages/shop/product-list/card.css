@@ -1,6 +1,6 @@
 .card {
-  /* width: 400px; */
-  /* height: 254px; */
+  width: 400px;
+  height: 400px !important;
   padding: .8em;
   background: #EEEEEE;
   position: relative;
