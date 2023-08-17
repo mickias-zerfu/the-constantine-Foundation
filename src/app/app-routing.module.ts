@@ -47,7 +47,7 @@ const routes: Routes = [
   { path: "event/view/:id", component: EventDetailComponent },
   { path: "event/update/:id", component: EventUpdateComponent },
   // Shops
-  { path: "shops", component: ShopContainerComponent },
+  { path: "shops", component: ProductListComponent },
   { path: "shop/create-shop", component: ShopContainerComponent },
   { path: "shops", component: ShopContainerComponent },
   { path: "shop/view/:id", component: ShopContainerComponent },
