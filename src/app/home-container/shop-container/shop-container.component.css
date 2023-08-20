@@ -10,7 +10,7 @@
  }
 
  .card-img {
-  background-color: #FF2921;
+  background-color: var(--primary);
   height: 40%;
   width: 100%;
   border-radius: .5rem;

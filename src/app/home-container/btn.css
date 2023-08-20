@@ -45,7 +45,7 @@
  }
 
  .button:hover {
-  color:#FF2921;
+  color:var(--primary);
  }
 
  .button:active {

@@ -52,30 +52,15 @@
  }
 
  .button:hover {
-  color:#FF2921;
+  color:var(--primary);
  }
 
  .button:active {
   filter: brightness(.8);
  }
- .title {
-  font-family: "Ubuntu", sans-serif;
-  font-size: 3em;
-  line-height: 1.5;
-  font-weight: 900;
-  color: rgb(0, 0, 0);
-}
-.sub-title {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 800;
-  font-size: 1.5em;
-  line-height: 1.5;
-  color: rgb(0, 0, 0);
-}
-
 
 .event-time-container  {
-  background-color: #FF2921;
+  background-color: var(--primary);
   margin-top: -50px;
   position: relative;
 }

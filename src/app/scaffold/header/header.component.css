@@ -10,12 +10,13 @@
   width: 90%;
   z-index: 111111;
   font-size: medium;
+  /* margin: auto; */
 }
 .phone-number {
-  background-color: #ffa73d;
+  background-color: var(--secondary);
   padding: 10px;
   text-align: right;
-  height: 100px;
+  height: 80px;
 }
 
 .phone-number-text {
@@ -27,12 +28,12 @@
   background-color: #ffffff;
   color: #000000;
   border-left: 7px solid #ff2921;
-  -webkit-box-shadow: 7px 5px 5px 2px rgba(245, 240, 245, 1);
-  -moz-box-shadow: 7px 5px 5px 2px rgba(245, 240, 245, 1);
-  box-shadow: 7px 5px 5px 2px rgba(245, 240, 245, 1);
+  -webkit-box-shadow: 2px 2px 2px 2px rgba(245, 240, 245, 1);
+  -moz-box-shadow: 2px 2px 2px 2px rgba(245, 240, 245, 1);
+  box-shadow: 2px 2px 2px 2px rgba(245, 240, 245, 1);
 }
 .menus {
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   justify-content: space-between;
   margin: auto;
@@ -53,8 +54,8 @@
 }
 
 .header .logo a {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   display: block;
   background: url("../../../assets/images/logos/logo.png") no-repeat 0 0;
   background-size: contain;
@@ -91,7 +92,17 @@
 
 .menu.right-menu {
   margin-left: auto;
-  background-color: #ff2921;
+  background-color: var(--primary);
+}
+li{
+  padding-left: 10px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 1.0em;
+  line-height: 1.0;
+}
+.learn-more{
+  padding-left: 20px;
 }
 .donation {
   padding: 10px 10px;

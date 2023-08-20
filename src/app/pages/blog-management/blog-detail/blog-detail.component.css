@@ -1,0 +1,10 @@
+.hero-section{
+  background-image: url('../../../../assets/images/Bg/forpages/edu.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 100%;
+  min-width: 100%;
+  margin: 0px;
+  padding: 0px;
+}

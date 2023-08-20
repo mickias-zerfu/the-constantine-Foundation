@@ -1,16 +1,16 @@
 .button {
   --color: #FFFFFF;
   padding: 0.8em 1.7em;
-  background-color: #FF2921;
+  background-color: var(--primary);
   border-radius: .3em;
   position: relative;
   overflow: hidden;
   cursor: pointer;
   transition: .5s;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 17px;
-  border: 1px solid #FF2921;
-  font-family: inherit;
+  border: 1px solid var(--primary);
+  font-family: Ubuntu, sans-serif;
   text-transform: uppercase;
   color: var(--color);
   z-index: 1;
@@ -45,7 +45,7 @@
  }
 
  .button:hover {
-  color:#FF2921;
+  color:var(--primary);
  }
 
  .button:active {

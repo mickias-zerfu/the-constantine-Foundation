@@ -1,32 +1,74 @@
 <div class="page">
   <div class="all-contain ">
-    <section class="top-container">
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide>
+        <div class="slide slide-1">
+          <div class="container mx-auto px-16 h-full flex items-center">
+            <div class=" hero-content">
+              <h2 class="text-3xl font-bold text-white ">Educational Needs</h2>
+              <h4 class="text-lg text-white mt-4">The woman approaches the camera till we see a close up of her face
+              </h4>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="slide slide-2">
+          <div class="container mx-auto px-16 h-full flex items-center">
+            <div class=" hero-content">
+              <h2 class="text-3xl font-bold text-white">Home is Life</h2>
+              <h4 class="text-lg text-white mt-4">We build strength, stability, and self
+                reliance through shelter. </h4>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="slide slide-3">
+          <div class="container mx-auto px-16 h-full flex items-center">
+            <div class=" hero-content">
+              <h2 class="text-3xl font-bold text-white">Help for orphans</h2>
+              <h4 class="text-lg text-white mt-4">One Of The Biggest Risk Factors Involved In Family Separation.</h4>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="slide slide-4">
+          <div class="container mx-auto px-16 h-full flex items-center">
+            <div class=" hero-content">
+              <h2 class="text-3xl font-bold text-white">sponsor an orphan</h2>
+              <h4 class="text-lg text-white mt-4">One Of The Biggest Risk Factors Involved In Family Separation.</h4>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </owl-carousel-o>
+    <!-- <section class="top-container">
       <owl-carousel-o [options]="customOptions">
         <ng-template carouselSlide>
           <div class="slide">
-            <img src='../../assets/images/Bg/AGRICULTURE.png' alt="img 1" />
+            <img src='../../assets/images/Bg/slider/abellA-01.png' alt="img 1" />
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="slide">
+            <img src='../../assets/images/Bg/slider/abelaa-02.png' alt="img 1" />
           </div>
         </ng-template>
         <ng-template carouselSlide>
           <div class="slide">
 
-            <img src='../../assets/images/Bg/ECONOMIC EMPOWERMENT.png' alt="img 1" />
+            <img src='../../assets/images/Bg/slider/abel 3.png' alt="img 1" />
           </div>
         </ng-template>
         <ng-template carouselSlide>
           <div class="slide">
-
-            <img src='../../assets/images/Bg/EDUCATION.png' alt="img 1" />
-          </div>
-        </ng-template>
-        <ng-template carouselSlide>
-          <div class="slide">
-
-            <img src='../../assets/images/Bg/HEALTH CARE.png' alt="img 1" />
+            <img src='../../assets/images/Bg/slider/abelaa-03.png' alt="img 1" />
           </div>
         </ng-template>
       </owl-carousel-o>
-    </section>
+    </section> -->
     <section style="position: relative;">
       <section class="py-8 cards-container">
         <div class="flex justify-center px-4 pb-16">
@@ -35,13 +77,10 @@
               <div class="rounded-lg overflow-hidden flex flex-col items-center p-4 shadow-md card card1 text-center">
                 <div class="content">
                   <div class="w-full h-full rounded flex text-center">
-                    <img src="../../assets/images/cards/MEMBER.png" alt="" class="rounded">
+                    <img src="../../assets/images/cards/BECOME A MEMBER SECOND HEADING.jpg" alt="" class="rounded  top-card-img">
                   </div>
-                  <!-- <p class="heading">Card Hover Effect</p>
-                <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium eligendi hic
-                  nesciunt corrupti ipsam
-                  autem saepe voluptas, minus fugit voluptatem magni ex sint, doloribus voluptatibus, esse facilis
-                  tenetur architecto nemo? </p> -->
+                  <p class="heading">Becom a Memeber</p>
+                  <p class="para">Lorem ipsum dolor sit, amet consectetur a .. </p>
                   <button class="button">REGISTER </button>
                 </div>
               </div>
@@ -50,22 +89,23 @@
             <div class="w-full md:w-1/2 lg:w-1/3 rounded">
               <div class="rounded-lg overflow-hidden flex flex-col items-center p-4 shadow-md card card2">
                 <div class="content">
-
                   <div class="w-full h-full rounded flex text-center">
-                    <img src="../../assets/images/cards//PROJECTS.png" alt="" class="rounded">
+                    <img src="../../assets/images/cards/PROJECTS SECOND HEADING.jpg" alt="" class="rounded top-card-img">
                   </div>
+                  <p class="heading">Projects</p>
+                  <p class="para">Lorem ipsum dolor sit, amet consectetur  dmckmd vnjdv jdnv kd </p>
                   <button class="button">READ MORE</button>
                 </div>
               </div>
             </div>
-
             <div class="w-full md:w-1/2 lg:w-1/3 rounded">
               <div class="rounded-lg overflow-hidden flex flex-col items-center p-4 shadow-md card card3">
                 <div class="content">
-
                   <div class="w-full h-full rounded flex text-center">
-                    <img src="../../assets/images/cards/DONATION.png" alt="" class="rounded">
+                    <img src="../../assets/images/cards/DONATION SECOND HEADING.jpg" alt="" class="rounded top-card-img">
                   </div>
+                  <p class="heading">Donation</p>
+                  <p class="para">sle medhnaialem Degef adrgugn wendmachu adelew ....</p>
                   <button class="button"> DONATE NOW</button>
                 </div>
               </div>
@@ -73,8 +113,8 @@
           </div>
         </div>
       </section>
-      <section class="blogs">
-        <div class="container py-8">
+      <section class="blogs ">
+        <div class="container wave py-8">
           <div class="heading text-center">
             <h1 class="title">Latest Blogs . . .</h1>
             <h2 class="sub-title">We Help Poor Children to Get a Better Life.</h2>
@@ -393,7 +433,7 @@
       </section>
       <section class="py-16 px-16">
 
-      <app-partner-container></app-partner-container>
+        <app-partner-container></app-partner-container>
       </section>
     </section>
   </div>

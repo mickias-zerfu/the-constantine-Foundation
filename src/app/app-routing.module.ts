@@ -47,12 +47,16 @@ const routes: Routes = [
   { path: "event/view/:id", component: EventDetailComponent },
   { path: "event/update/:id", component: EventUpdateComponent },
   // Shops
-  { path: "shops", component: ProductListComponent },
-  { path: "shop/create-shop", component: ShopContainerComponent },
-  { path: "shops", component: ShopContainerComponent },
-  { path: "shop/view/:id", component: ShopContainerComponent },
-  { path: "shop/update/:id", component: ShopContainerComponent },
-// static pages
+  {
+    path: "shops", component: ProductListComponent,
+    children: [
+
+      { path: " create-shop", component: ShopContainerComponent },
+      { path: " ", component: ShopContainerComponent },
+      { path: " view/:id", component: ShopContainerComponent },
+      { path: " update/:id", component: ShopContainerComponent }]
+  },
+  // static pages
   { path: "about-us", component: AboutUsComponent },
   { path: "contact-us", component: ContactUsComponent },
 ]

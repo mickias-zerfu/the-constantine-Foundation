@@ -51,6 +51,8 @@ import { SearchComponent } from './pages/shop/search/search.component';
 import { CategoriesComponent } from './pages/shop/categories/categories.component';
 import { ReviewComponent } from './pages/shop/review/review.component';
 import { RelatedProductsComponent } from './pages/shop/related-products/related-products.component';
+import { AuthComponent } from './auth/auth.component';
+import { BannerComponent } from './shared/banner/banner.component';
 
 @NgModule({
   declarations: [
@@ -93,7 +95,9 @@ import { RelatedProductsComponent } from './pages/shop/related-products/related-
     SearchComponent,
     CategoriesComponent,
     ReviewComponent,
-    RelatedProductsComponent
+    RelatedProductsComponent,
+    AuthComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,
