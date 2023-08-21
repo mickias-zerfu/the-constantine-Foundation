@@ -15,7 +15,8 @@ export class HomeContainerComponent implements OnInit {
     touchDrag: false,
     pullDrag: false,
     dots: true,
-    navSpeed: 900,
+    autoplay: true,
+    navSpeed: 100,
     navText: ['&#8249', '&#8250;'],
     responsive: {
       0: {
@@ -41,6 +42,5 @@ export class HomeContainerComponent implements OnInit {
   activeSlides?: SlidesOutputData;
   getPassedData(data: SlidesOutputData) {
     this.activeSlides = data;
-    console.log(this.activeSlides);
   }
 }

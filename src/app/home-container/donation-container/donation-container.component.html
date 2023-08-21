@@ -1,0 +1,101 @@
+<section class="py-16 px-16 donation-section" >
+  <div class="heading text-center bg-gray-100 bg-opacity-50">
+    <h1 class="title ">Donation</h1>
+    <h2 class="sub-title">We Help Poor Children to Get a Better Life.</h2>
+  </div>
+  <div class="container">
+    <div class="flex justify-end">
+      <!-- <div class="w-1/2 bg-opacity-75 bg-blue-500">
+        <div class="homeless p-4">
+          <div class="flex flex-col h-full justify-end">
+            <h2 class="text-white">35,123 Kids Homeless <span>Reached So Far!</span></h2>
+            <h6 class="text-white">Duis sed odio sit amet nibh vulputate cursus a amet accumsan ipsuy veli Nam nec
+              tellus a odio tincidunt it con nec tellus a odio sequat auctor.</h6>
+            <div class="flex">
+              <div>
+                <h5 class="text-white">Raised<span>$8,100</span></h5>
+                <div class="separator"></div>
+                <h5 class="text-white">Goal<span>$26,500</span></h5>
+              </div>
+              <div class="progressbar">
+                <div class="circle three" data-percent="75"><canvas width="250" height="250"
+                    style="height: 200px; width: 200px;"></canvas>
+                  <div>75%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div class="w-1/2 donation-bg rounded-lg overflow-hidden shadow-lg my-8 py-16 px-16">
+        <div class="p-6">
+          <h2 class="text-white text-3xl font-bold mb-4">Please Donate Today!</h2>
+          <p class="text-white mb-6">How often would you like to donate?</p>
+          <form class="donate-form">
+            <div class="flex items-center mb-4">
+              <div class="radio-option">
+                <input type="radio" id="weekly" name="donation_frequency" value="weekly" class="hidden">
+                <label for="weekly" class="radio-label">
+                  <span class="radio-button"></span>
+                  Weekly
+                </label>
+              </div>
+              <div class="radio-option">
+                <input type="radio" id="monthly" name="donation_frequency" value="monthly" class="hidden">
+                <label for="monthly" class="radio-label">
+                  <span class="radio-button"></span>
+                  Monthly
+                </label>
+              </div>
+              <div class="radio-option">
+                <input type="radio" id="yearly" name="donation_frequency" value="yearly" class="hidden">
+                <label for="yearly" class="radio-label">
+                  <span class="radio-button"></span>
+                  Yearly
+                </label>
+              </div>
+            </div>
+            <div class="mb-4">
+              <div class="flex items-center mt-2">
+                <mat-form-field appearance="outline" class="w-full rounded-lg overflow-hidden shadow-lg">
+                <mat-label>
+                  <h6 class="text-white">How much would you like to donate?</h6>
+                </mat-label>
+                <input matInput name="amount" type="text" placeholder="Donation Amount" required class="text-white donate-input">
+              </mat-form-field>
+              </div>
+            </div>
+            <ul class="flex flex-wrap mb-4">
+              <li class="mr-2 mb-2">
+                <a class="donating give-donation-level-btn bg-white   font-bold py-2 px-4 rounded-full"
+                  href="JavaScript:void(0)">$10</a>
+              </li>
+              <li class="mr-2 mb-2">
+                <a class="donating give-donation-level-btn bg-white   font-bold py-2 px-4 rounded-full"
+                  href="JavaScript:void(0)">$20</a>
+              </li>
+              <li class="mr-2 mb-2">
+                <a class="donating give-donation-level-btn bg-white   font-bold py-2 px-4 rounded-full"
+                  href="JavaScript:void(0)">$50</a>
+              </li>
+              <li class="mr-2 mb-2">
+                <a class="donating give-donation-level-btn bg-white   font-bold py-2 px-4 rounded-full"
+                  href="JavaScript:void(0)">$100</a>
+              </li>
+              <li class="mr-2 mb-2">
+                <a class="donating give-donation-level-btn bg-white   font-bold py-2 px-4 rounded-full"
+                  href="JavaScript:void(0)">$200</a>
+              </li>
+              <li class="mr-2 mb-2">
+                <a  class="give-donation-level-btn give-btn give-btn-level-custom bg-white   font-bold py-2 px-4 rounded-full"
+                  value="custom">Custom Amount</a>
+              </li>
+            </ul>
+            <input type="submit" class="give-submit button"
+              name="give-purchase" value="Donate Now">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

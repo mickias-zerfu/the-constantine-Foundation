@@ -53,6 +53,7 @@ import { ReviewComponent } from './pages/shop/review/review.component';
 import { RelatedProductsComponent } from './pages/shop/related-products/related-products.component';
 import { AuthComponent } from './auth/auth.component';
 import { BannerComponent } from './shared/banner/banner.component';
+import { DonationContainerComponent } from './home-container/donation-container/donation-container.component';
 
 @NgModule({
   declarations: [
@@ -97,7 +98,8 @@ import { BannerComponent } from './shared/banner/banner.component';
     ReviewComponent,
     RelatedProductsComponent,
     AuthComponent,
-    BannerComponent
+    BannerComponent,
+    DonationContainerComponent
   ],
   imports: [
     BrowserModule,

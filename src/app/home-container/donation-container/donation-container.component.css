@@ -1,0 +1,69 @@
+.donation-bg{
+ background-color: var(--primary);
+}
+li{
+  color: var(--secondary);
+}
+.donate-input {
+  color: #fff;
+  border-color: #fff !important;
+  font-size: 1rem;
+}
+
+:host ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+  color: #fff;
+  border-color: #fff;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline-thick {
+  border-width: 2px;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-label {
+  color: #fff;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-underline {
+  display: none;
+}
+.radio-option {
+  position: relative;
+  margin-right: 2rem;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.radio-button {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  position: relative;
+}
+
+.radio-button::after {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+input[type="radio"]:checked + .radio-label .radio-button::after {
+  opacity: 1;
+  background-color: #fff;
+}
