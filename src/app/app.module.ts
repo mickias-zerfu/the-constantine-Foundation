@@ -54,6 +54,7 @@ import { RelatedProductsComponent } from './pages/shop/related-products/related-
 import { AuthComponent } from './auth/auth.component';
 import { BannerComponent } from './shared/banner/banner.component';
 import { DonationContainerComponent } from './home-container/donation-container/donation-container.component';
+import { ShopManagementComponent } from './pages/shop/shop-management/shop-management.component';
 
 @NgModule({
   declarations: [
@@ -99,7 +100,8 @@ import { DonationContainerComponent } from './home-container/donation-container/
     RelatedProductsComponent,
     AuthComponent,
     BannerComponent,
-    DonationContainerComponent
+    DonationContainerComponent,
+    ShopManagementComponent
   ],
   imports: [
     BrowserModule,

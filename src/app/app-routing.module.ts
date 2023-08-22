@@ -22,6 +22,7 @@ import { ProjectListComponent } from './pages/project-management/project-list/pr
 import { ProjectUpdateComponent } from './pages/project-management/project-update/project-update.component';
 import { ProductListComponent } from './pages/shop/product-list/product-list.component';
 import { ShopContainerComponent } from './home-container/shop-container/shop-container.component';
+import { ShopManagementComponent } from './pages/shop/shop-management/shop-management.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "/home", pathMatch: "full" },
@@ -48,14 +49,14 @@ const routes: Routes = [
   { path: "event/update/:id", component: EventUpdateComponent },
   // Shops
   {
-    path: "shops", component: ProductListComponent,
-    children: [
-
-      { path: " create-shop", component: ShopContainerComponent },
-      { path: " ", component: ShopContainerComponent },
-      { path: " view/:id", component: ShopContainerComponent },
-      { path: " update/:id", component: ShopContainerComponent }]
+    path: "shops", component: ProductListComponent
   },
+
+  { path: " create-shop", component: ShopContainerComponent },
+  { path: "shop-mgmt", component: ShopManagementComponent },
+  { path: " view/:id", component: ShopContainerComponent },
+  { path: " update/:id", component: ShopContainerComponent },
+
   // static pages
   { path: "about-us", component: AboutUsComponent },
   { path: "contact-us", component: ContactUsComponent },
