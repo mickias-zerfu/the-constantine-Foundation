@@ -19,28 +19,50 @@ export const ROUTES: RouteInfo[] = [
     submenu: []
   },
   {
-    path: '/events',
+    path: '/events-management',
     title: 'Event Management',
-    icon: 'store',
+    icon: 'event',
     class: '',
     extralink: false,
     submenu: []
   },
   {
-    path: '/projects',
+    path: '/projects-management',
     title: 'Project Management',
-    icon: 'store',
+    icon: 'folder',
     class: '',
     extralink: false,
     submenu: []
   },
   {
-    path: '/shops',
+    path: '/shop-mgmt',
     title: 'E-commerce',
     icon: 'store',
     class: '',
     extralink: false,
-    submenu: []
+    submenu: [
+      {
+        path: '/shop-mgmt/category',
+        title: 'Categories',
+        icon: 'category',
+        class: '',
+        extralink: false,
+        submenu: []
+      },{
+        path: '/shop-mgmt/orders',
+        title: 'Orders',
+        icon: 'shopping_cart',
+        class: '',
+        extralink: false,
+        submenu: []
+      },{
+        path: '/shop-mgmt/products',
+        title: 'Product Managaement',
+        icon: 'inventory',
+        class: '',
+        extralink: false,
+        submenu: []
+      },]
   },
   {
     path: '/component/setting',
@@ -50,14 +72,7 @@ export const ROUTES: RouteInfo[] = [
     extralink: false,
     submenu: []
   },
-  {
-    path: '/component/dropdown',
-    title: 'Calender',
-    icon: 'exit_to_app',
-    class: '',
-    extralink: false,
-    submenu: []
-  },
+
   {
     path: '/about',
     title: 'Help',

@@ -26,6 +26,7 @@ import { MatRadioModule } from "@angular/material/radio";
 import { MatExpansionModule } from "@angular/material/expansion";
 import { MatStepperModule } from "@angular/material/stepper";
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   imports: [
@@ -56,6 +57,7 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     MatExpansionModule,
     MatStepperModule,
     MatProgressSpinnerModule,
+    MatSnackBarModule
   ],
   exports: [
     CommonModule,

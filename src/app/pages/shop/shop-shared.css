@@ -1,6 +1,6 @@
 .menu-toolbar {
   display: flex;
-  justify-content: flex-start;
+  justify-content:space-between;
   align-items: center;
   height: 64px; /* Adjust the height as needed */
 }
@@ -8,6 +8,7 @@
 .menu-button {
   display: flex;
   align-items: center;
+  justify-content:space-between;
   margin-left:10px;
   padding: 0 16px;
   color: white;
@@ -31,7 +32,4 @@
 
 .menu-label {
   font-weight: 500;
-}
-th.mat-header-cell {
-  text-align: center;
 }

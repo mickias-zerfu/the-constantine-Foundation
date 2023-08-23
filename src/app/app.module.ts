@@ -55,6 +55,10 @@ import { AuthComponent } from './auth/auth.component';
 import { BannerComponent } from './shared/banner/banner.component';
 import { DonationContainerComponent } from './home-container/donation-container/donation-container.component';
 import { ShopManagementComponent } from './pages/shop/shop-management/shop-management.component';
+import { CategoriesModalComponent } from './pages/shop/categories/categories-modal/categories-modal.component';
+import { OrdersComponent } from './pages/shop/orders/orders.component';
+import { ProductMgmtComponent } from './pages/shop/product-mgmt/product-mgmt.component';
+import { ConfirmDialogComponent } from './shared/confirm-modal/confirm-dialog.component';
 
 @NgModule({
   declarations: [
@@ -101,7 +105,11 @@ import { ShopManagementComponent } from './pages/shop/shop-management/shop-manag
     AuthComponent,
     BannerComponent,
     DonationContainerComponent,
-    ShopManagementComponent
+    ShopManagementComponent,
+    CategoriesModalComponent,
+    OrdersComponent,
+    ProductMgmtComponent,
+    ConfirmDialogComponent
   ],
   imports: [
     BrowserModule,

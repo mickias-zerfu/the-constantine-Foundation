@@ -15,14 +15,13 @@ export class SidebarComponent implements OnInit {
   showSubMenu = '';
   public sidebarnavItems: RouteInfo[] = [];
   // this is for the open close
-  addExpandClass(element: string) {
+  addExpandClass(element: string): void {
     if (element === this.showMenu) {
       this.showMenu = '0';
     } else {
       this.showMenu = element;
     }
   }
-
   constructor(
     // private modalService: NgbModal,
     private router: Router,
