@@ -10,7 +10,7 @@ import { ConfirmDialogComponent, ConfirmDialogData } from 'src/app/shared/confir
 @Component({
   selector: 'app-categories',
   templateUrl: './categories.component.html',
-  styleUrls: ['./categories.component.css']
+  styleUrls: ['./categories.component.css','../shop-shared.css']
 })
 export class CategoriesComponent implements OnInit {
   categories: any[] = [

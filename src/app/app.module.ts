@@ -40,7 +40,7 @@ import { ProjectCreateComponent } from './pages/project-management/project-creat
 import { ProductUpdateComponent } from './pages/shop/product-update/product-update.component';
 import { ProductListComponent } from './pages/shop/product-list/product-list.component';
 import { ProductDetailComponent } from './pages/shop/product-detail/product-detail.component';
-import { ProductCreateComponent } from './pages/shop/product-create/product-create.component';
+import { ProductCreateComponent } from './pages/shop/product-mgmt/product-create/product-create.component';
 import { CartComponent } from './pages/shop/cart/cart.component';
 import { CheckoutComponent } from './pages/shop/checkout/checkout.component';
 import { OrderConfirmationComponent } from './pages/shop/order-confirmation/order-confirmation.component';

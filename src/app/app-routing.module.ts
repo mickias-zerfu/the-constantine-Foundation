@@ -24,9 +24,9 @@ import { ProductListComponent } from './pages/shop/product-list/product-list.com
 import { ShopContainerComponent } from './home-container/shop-container/shop-container.component';
 import { ShopManagementComponent } from './pages/shop/shop-management/shop-management.component';
 import { CategoriesComponent } from './pages/shop/categories/categories.component';
-import { ProductCreateComponent } from './pages/shop/product-create/product-create.component';
 import { OrdersComponent } from './pages/shop/orders/orders.component';
 import { ProductMgmtComponent } from './pages/shop/product-mgmt/product-mgmt.component';
+import { ProductCreateComponent } from './pages/shop/product-mgmt/product-create/product-create.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "/home", pathMatch: "full" },
@@ -61,6 +61,7 @@ const routes: Routes = [
   { path: "shop-mgmt/category", component: CategoriesComponent },
   { path: "shop-mgmt/orders", component: OrdersComponent },
   { path: "shop-mgmt/products", component: ProductMgmtComponent },
+  { path: "shop-mgmt/products/create", component: ProductCreateComponent },
   { path: " view/:id", component: ShopContainerComponent },
   { path: " update/:id", component: ShopContainerComponent },
 

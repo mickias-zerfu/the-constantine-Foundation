@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { CategoriesModalComponent } from '../categories/categories-modal/categories-modal.component';
+import { ProductModel } from 'src/app/models/shop/product.model';
 
 @Component({
   selector: 'app-product-mgmt',
@@ -8,28 +9,49 @@ import { CategoriesModalComponent } from '../categories/categories-modal/categor
   styleUrls: ['./product-mgmt.component.css','../shop-shared.css']
 })
 export class ProductMgmtComponent {
-  categories: any[] = [
-    { id: 1, name: 'Category 1', icon: 'category', numProducts: 5 },
-    { id: 2, name: 'Category 2', icon: 'category', numProducts: 10 },
-    { id: 3, name: 'Category 3', icon: 'category', numProducts: 3 }
+  products: ProductModel[] = [
+    // Add your product data here
+    {
+      id: 1,
+      name: 'Product 1',
+      description: 'Description 1',
+      price: '10.99',
+      image_url:'https://dummyimage.com/300',
+      manufacturer: 'Manufacturer 1',
+      category: {
+        id: 1,
+        name: 'Candles',
+        icon:'string'},
+      instock: 10,
+      isFeatured:true,
+      created_at: '2021-01-01',
+      updated_at: '2021-01-01'
+    },
+    // Add more products as needed
   ];
+  displayedColumns: string[] = ['id', 'name', 'image_url','description', 'price', 'manufacturer', 'category', 'instock', 'created_at', 'updated_at', 'action'];
 
-  displayedColumns: string[] = ['id', 'name', 'icon', 'numProducts', 'action'];
 
   constructor(private dialog: MatDialog) { }
 
   openModal(): void {
-    const dialogRef = this.dialog.open(CategoriesModalComponent, {
-      width: '400px'
-    });
 
-    dialogRef.afterClosed().subscribe(result => {
-      // Logic to handle the result of the modal
-      console.log(result);
-    });
+
+    // const dialogRef = this.dialog.open(CategoriesModalComponent, {
+    //   width: '400px'
+    // });
+
+    // dialogRef.afterClosed().subscribe(result => {
+    //   // Logic to handle the result of the modal
+    //   console.log(result);
+    // });
   }
 
-  editCategory(categoryId: number): void {
+  editProduct(categoryId: number): void {
+    // Logic to edit the category with the provided categoryId
+    console.log(`Editing category with ID: ${categoryId}`);
+  }
+  deleteProduct(categoryId: number): void {
     // Logic to edit the category with the provided categoryId
     console.log(`Editing category with ID: ${categoryId}`);
   }
