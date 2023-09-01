@@ -1,3 +1,7 @@
+.page{
+  background: linear-gradient(90deg , #bdc4d3, #Efe6dd);
+
+}
 .carousel-slide {
   padding: 0 2rem; /* Add padding to the carousel */
 }
@@ -165,7 +169,6 @@
 }
 .upcoming-event-separator {
   display: block;
-  background: linear-gradient(to bottom, #bdc4d3, #Efe6dd);
   width: 1px;
   height: 70px;
 }
@@ -186,23 +189,18 @@ h6 {
 .cards-container {
   padding: 0% 10%;
   position: relative;
-  background: linear-gradient(180deg, #bdc4d3, #Efe6dd);
   opacity: 0.8;
 
 }
 .blogs {
-  background: linear-gradient(45deg , #bdc4d3, #Efe6dd);
   padding: 0% 10%;
 }
 
 .reports {
-  background: linear-gradient(45deg , #bdc4d3, #Efe6dd);
   padding: 10%;
 }
-.reports-bg{
-  background: linear-gradient(180deg , #bdc4d3, #Efe6dd);
-}
+/* .reports-bg{
+} */
 .campaign {
-  background: linear-gradient(180deg , #bdc4d3, #Efe6dd);
   padding: 10%;
 }
