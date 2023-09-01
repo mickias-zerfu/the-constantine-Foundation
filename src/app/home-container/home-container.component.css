@@ -165,7 +165,7 @@
 }
 .upcoming-event-separator {
   display: block;
-  background-color: #ffffff61;
+  background: linear-gradient(to bottom, #bdc4d3, #Efe6dd);
   width: 1px;
   height: 70px;
 }
@@ -184,23 +184,25 @@ h6 {
   color: #1d1d1d;
 }
 .cards-container {
-  background-color: #ffffff;
   padding: 0% 10%;
   position: relative;
+  background: linear-gradient(180deg, #bdc4d3, #Efe6dd);
+  opacity: 0.8;
+
 }
 .blogs {
-  background-color: #Efe6dd;
+  background: linear-gradient(45deg , #bdc4d3, #Efe6dd);
   padding: 0% 10%;
 }
 
 .reports {
-  background-color: #ffffff;
+  background: linear-gradient(45deg , #bdc4d3, #Efe6dd);
   padding: 10%;
 }
 .reports-bg{
-  background-color: #Efe6dd;
+  background: linear-gradient(180deg , #bdc4d3, #Efe6dd);
 }
 .campaign {
-  background-color: #Efe6dd ;
+  background: linear-gradient(180deg , #bdc4d3, #Efe6dd);
   padding: 10%;
 }
