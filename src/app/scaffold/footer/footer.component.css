@@ -33,5 +33,5 @@ footer{
   color: rgb(178, 181, 224);
 }
 .footer-shadow{
-  background-color: #FF2921;
+  background-color: var(--primary);
 }

@@ -1,7 +1,6 @@
 .button {
-  --color: #FFA73D;
   padding: 0.8em 1.7em;
-  background-color: #EEEEEE;
+  background-color: var(--accent);
   border-radius: .3em;
   position: relative;
   overflow: hidden;
@@ -12,7 +11,7 @@
   border: 1px solid;
   font-family: inherit;
   text-transform: uppercase;
-  color: var(--color);
+  color: var(--primary-plus);
   z-index: 1;
  }
 

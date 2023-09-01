@@ -63,32 +63,39 @@
   padding: 150px 100px;
 }
 .hero-content h2{
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Bizantheum", sans-serif;
   font-size: 3em;
   line-height: 1.5;
   font-weight: 900;
   color: #ffffff;
 }
 .hero-content h4{
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Bizantheum", sans-serif;
   font-weight: 800;
   font-size: 1.5em;
   line-height: 1.5;
   color: #ffffff;
 }
 .title {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Bizantheum", sans-serif;
   font-size: 3em;
   line-height: 1.5;
   font-weight: 900;
   color: var(--primary);
 }
 .sub-title {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Bizantheum", sans-serif;
   font-weight: 800;
   font-size: 1.5em;
   line-height: 1.5;
   color: var(--primary);
+}
+.tagline{
+  font-family: "Amellyta", sans-serif;
+  font-size: 6rem;
+  line-height: 2.5;
+  font-weight: 300;
+  color: white;
 }
 .help-man {
   overflow: hidden;
@@ -182,7 +189,7 @@ h6 {
   position: relative;
 }
 .blogs {
-  background-color: #EEEEEE;
+  background-color: #Efe6dd;
   padding: 0% 10%;
 }
 
@@ -191,9 +198,9 @@ h6 {
   padding: 10%;
 }
 .reports-bg{
-  background-color: #FFA73D;
+  background-color: #Efe6dd;
 }
 .campaign {
-  background-color: #eeeeee;
+  background-color: #Efe6dd ;
   padding: 10%;
 }
