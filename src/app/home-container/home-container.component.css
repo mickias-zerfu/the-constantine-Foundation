@@ -164,35 +164,35 @@
   opacity: 0.8;
 }
 h6 {
-  color: #1d1d1d;
+  color: #ffffff;
 }
 .cards-container {
 
-  background: linear-gradient(180deg , #bc6851d4, #bc6851ae);
+  background-color: var(--accent) ;
   padding: 0% 10%;
   position: relative;
 }
 .blogs {
-  background: linear-gradient(180deg , #bc6851b0, #bc68517b);
+  background-color: var(--primary-plus);
+  padding: 0% 10%;
+}
+.campaign {
+  background-color: var(--primary-plus);
   padding: 0% 10%;
 }
 
 .reports {
-  background: linear-gradient(180deg , #bc685185, #bc685157);
+  background-color:  var(--accent);
   padding: 0% 10%;
 }
 .reports-bg{
 }
-.campaign {
-  background: linear-gradient(180deg , #bc685152, #bc68512e);
-  padding: 0% 10%;
-}
 .events{
-  background: linear-gradient(180deg , #Efe6dd, #efe6ddd3);
+  background-color: #Efe6dd ;
 }
 .shop{
-  background: linear-gradient(180deg , #efe6ddd3, #bc68519f);
+  background-color: #bc6851b0 ;
 }
 .partners{
-  background: linear-gradient(180deg , #bc6851b0, #bc6851d4);
+  background-color: #bc6851b0 ;
 }
