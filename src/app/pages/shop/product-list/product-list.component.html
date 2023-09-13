@@ -1,5 +1,5 @@
 <main>
-  <app-banner [backgroundImage]="'../../../../assets/images/Bg/footer.png'">
+  <app-banner [backgroundImage]="'../../../../assets/images/Bg/afooter.png'">
     <div class="container py-8">
       <div class="heading text-left  px-16">
         <h1 class="title">Our Shop</h1>
@@ -8,6 +8,54 @@
     </div>
   </app-banner>
   <section class="body-wrapper w-full align-center text-center px-16">
+    <section class="categories-container bg-garay-200 py-4">
+      <div class="contasiner mx-auto">
+          <mat-toolbar class="menu-toolbar justify-between">
+            <mat-toolbar-row class="justify-around">
+              <button
+                mat-button
+                class="menu-button"
+                [ngClass]="{ 'active': selectedCategory === 'all' }"
+                (click)="selectCategory('all')"
+              >
+                <span class="menu-label">All</span>
+              </button>
+              <button
+                mat-button
+                class="menu-button"
+                [ngClass]="{ 'active': selectedCategory === 'candles' }"
+                (click)="selectCategory('candles')"
+              >
+                <span class="menu-label">Candles</span>
+              </button>
+              <button
+                mat-button
+                class="menu-button"
+                [ngClass]="{ 'active': selectedCategory === 'antiques' }"
+                (click)="selectCategory('antiques')"
+              >
+                <span class="menu-label">Antiques</span>
+              </button>
+              <button
+                mat-button
+                class="menu-button"
+                [ngClass]="{ 'active': selectedCategory === 'arts' }"
+                (click)="selectCategory('arts')"
+              >
+                <span class="menu-label">Arts</span>
+              </button>
+            </mat-toolbar-row>
+          </mat-toolbar>
+
+          <!-- <button
+            class="category-btn"
+            [ngClass]="{ 'active': selectedCategory === 'arts' }"
+            (click)="selectCategory('arts')"
+          >
+            Arts
+          </button> -->
+      </div>
+    </section>
     <section>
       <div class="container py-8 px-4">
         <div class="flex justify-center space-x-4 w-full gap gap-2">
@@ -50,4 +98,4 @@
       </div>
     </section>
   </section>
-  </main>
+</main>

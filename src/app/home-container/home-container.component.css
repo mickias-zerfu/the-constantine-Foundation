@@ -1,4 +1,4 @@
-.page{
+.page {
   /* background: linear-gradient(90deg , #bdc4d3, #Efe6dd); */
 }
 .carousel-slide {
@@ -20,17 +20,16 @@
   height: 80vh;
 }
 .slide.slide-1 {
-  background-image: url('../../assets/images/Bg/slider/1.png');
-
+  background-image: url("../../assets/images/Bg/slider/1.png");
 }
 .slide.slide-2 {
-  background-image: url('../../assets/images/Bg/slider/2.png');
+  background-image: url("../../assets/images/Bg/slider/2.png");
 }
 .slide.slide-3 {
-  background-image: url('../../assets/images/Bg/slider/3.png');
+  background-image: url("../../assets/images/Bg/slider/3.png");
 }
 .slide.slide-4 {
-  background-image: url('../../assets/images/Bg/slider/4.png');
+  background-image: url("../../assets/images/Bg/slider/4.png");
 }
 .slide img {
   height: auto; /* Adjust the height of the image according to its aspect ratio */
@@ -43,14 +42,14 @@
   margin: auto 10px;
   padding: 150px 100px;
 }
-.hero-content h2{
+.hero-content h2 {
   font-family: "Bizantheum", sans-serif;
   font-size: 3em;
   line-height: 1.5;
   font-weight: 900;
   color: #ffffff;
 }
-.hero-content h4{
+.hero-content h4 {
   font-family: "Bizantheum", sans-serif;
   font-weight: 800;
   font-size: 1.5em;
@@ -99,24 +98,23 @@
 .help-man:hover .overlay {
   /* transition: opacity 0.3s, transform 0.5s;
   opacity: 0.1; */
-  animation: shine .75s;
-  animation: ease-in .75s;
+  animation: shine 0.75s;
+  animation: ease-in 0.75s;
   transform: skewX(-25deg);
 }
-.help-man:hover   {
+.help-man:hover {
   transition: opacity 0.3s, transform 0.5s;
   opacity: 0.8;
   transform: scale(1.3);
-
 }
 
-.event-time-container  {
+.event-time-container {
   background-color: var(--primary);
   margin-top: -50px;
   position: relative;
 }
-.event-bg-overlay{
-  background-color: #FFA73D;
+.event-bg-overlay {
+  background-color: #ffa73d;
 }
 .upcoming-event-time {
   justify-content: space-between;
@@ -151,6 +149,9 @@
   width: 1px;
   height: 70px;
 }
+.upcoming-event-data h6{
+  color: #ffa73d;
+}
 
 .donation-section {
   background-image: url("../../assets/images/donation.jpg");
@@ -167,8 +168,11 @@ h6 {
   color: #ffffff;
 }
 .cards-container {
-
-  background-color: var(--accent) ;
+  /* background-color: var(--accent) ; */
+  background-image: url("../../assets/images/Bg/wave-cards.svg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
   padding: 0% 10%;
   position: relative;
 }
@@ -177,22 +181,25 @@ h6 {
   padding: 0% 10%;
 }
 .campaign {
-  background-color: var(--primary-plus);
+  background-image: url("../../assets/images/Bg/blob-bg-campaign.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 0% 10%;
 }
 
 .reports {
-  background-color:  var(--accent);
+  background-color: var(--accent);
   padding: 0% 10%;
 }
-.reports-bg{
+.reports-bg {
 }
-.events{
-  background-color: #Efe6dd ;
+.events {
+  background-color: #efe6dd;
 }
-.shop{
-  background-color: #bc6851b0 ;
+.shop {
+  background-color: #bc6851b0;
 }
-.partners{
-  background-color: #bc6851b0 ;
+.partners {
+  background-color: #bc6851b0;
 }

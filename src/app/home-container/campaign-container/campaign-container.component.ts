@@ -78,7 +78,7 @@ export class CampaignContainerComponent implements OnInit {
 
   ngAfterViewInit() {
     this.owlCarousel.translated.subscribe((event: any) => {
-      console.log(event);
+      // console.log(event);
       if (event.startPosition == 3) {
         this.activeCauseIndex = 0;
       }
@@ -86,7 +86,7 @@ export class CampaignContainerComponent implements OnInit {
         const currentSlideIndex = event.startPosition + 1;
         this.activeCauseIndex = currentSlideIndex;
       }
-      console.log(this.activeCauseIndex);
+      // console.log(this.activeCauseIndex);
     });
   }
 }

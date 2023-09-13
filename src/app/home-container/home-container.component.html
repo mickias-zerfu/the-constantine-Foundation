@@ -12,6 +12,9 @@
                 <img src="../../assets/images/logos/tagline.png" alt="" style="height: 300px; width: 300px;">
               </div>
             </div>
+            <div>
+
+            </div>
           </div>
         </div>
       </ng-template>
@@ -103,7 +106,8 @@
               <div class="rounded-lg overflow-hidden flex flex-col items-center p-4 shadow-md card card2 text-center">
                 <div class="content">
                   <div class="w-full h-full rounded flex text-center">
-                    <img src="../../assets/images/cards/projects.png" alt="" class="rounded top-card-img bg-black ">
+                    <img src="../../assets/images/cards/DONATION.png" alt="" class="rounded  top-card-img bg-white">
+                    <!-- <img src="../../assets/images/cards/projects.png" alt=" Projects Image" class="rounded top-card-img bg-black "> -->
                   </div>
                   <p class="heading">Projects</p>
                   <p class="para"> Healthcare, Educations, building cancer hospitals, manufacturing
@@ -116,12 +120,13 @@
               <div class="rounded-lg overflow-hidden flex flex-col items-center p-4 shadow-md card card3 text-center">
                 <div class="content">
                   <div class="w-full h-full rounded flex text-center">
-                    <img src="../../assets/images/cards/donation.png" alt="" class="rounded top-card-img bg-white">
+                    <img src="../../assets/images/cards/PROJECTS.png" alt="Donationimages "
+                      class="rounded top-card-img bg-white">
                   </div>
                   <p class="heading">Donation</p>
                   <p class="para"> With the support of community leaders, corporate sponsors, and churches, this
                     initiative thrives.</p>
-                  <button class="button"> DONATE NOW</button>
+                  <button class="button"> DONATE NOW ! </button>
                 </div>
               </div>
             </div>
@@ -135,66 +140,74 @@
             <h2 class="sub-title">We Help Poor Children to Get a Better Life.</h2>
           </div>
           <div class="flex flex-wrap py-16 ">
-            <div class="w-full lg:w-1/2 px-4">
-              <div class="flex space-x-4">
-                <div class="w-8/12 help-man hoverimg  relative p-8">
+            <div class="w-full lg:w-3/4 px-4">
+              <div class="flex space-x-4 itemsa-center">
+                <div class="w-1/3 help-man hoverimg relative p-8">
                   <a routerLinkActive="active" [routerLink]="['contactus']" class="">
                     <div class="">
                       <div class="aspect-w-16 aspect-h-9">
-                        <img alt="man" class="object-cover w-full h-full  rounded"
+                        <img alt="man" class="object-cover w-full h-full rounded"
                           src="../../assets/images/blogs/blog 1.png">
                       </div>
-                      <!-- <h5 class="absolute bottom-4 left-4 text-white bg-gray-900">We help more than 23k children every
-                      year</h5> -->
+                      Author: Abebe
+                      Date : 3/1/2023
                     </div>
                     <div class="overlay"></div>
                   </a>
                 </div>
-                <div class="w-4/12 blog-card">
-                  <div class="help-man hoverimg mt-4 relative p-4">
-                    <a routerLinkActive="active" [routerLink]="['contactus']">
-                      <div class="aspect-w-16 aspect-h-9">
-                        <img alt="man" class="object-cover w-full h-full rounded"
-                          src="../../assets/images/blogs/blog page 2.png">
-                      </div>
-                      <div class="overlay"></div>
-                    </a>
-                  </div>
-                  <div class="help-man hoverimg mt-4 relative ">
-                    <a routerLinkActive="active" [routerLink]="['contactus']">
-                      <div class="aspect-w-16 aspect-h-9">
-                        <img alt="man" class="object-cover w-full h-full rounded"
-                          src="../../assets/images/blogs/blog page 3.png">
-                      </div>
-                      <div class="overlay"></div>
-                    </a>
-                  </div>
+                <div class="w-2/3 help-man-data text-left p-8">
+                  <h2 class="text-2xl font-semibold">“It has to be worthy”</h2>
+                  <h3 class="text-2xl">Konstantinos Papadakis on his carving work</h3>
+                  <p class="text-l">
+                    He says many people often wonder why peacocks are often featured in altar pieces. “It’s the symbol
+                    of
+                    pride. The bad pride. Selfishness,” he says. “We carve them because the house of God – church – is
+                    open to everyone. Everybody is welcome as is. You come to this house as you are.”
+                    Orthodox churches hire craftsmen like Papadakis to create altarpiece carvings that...
+                  </p>
+                  <button class="button mt-4 text-lg">READ MORE</button>
                 </div>
               </div>
             </div>
-            <div class="w-full lg:w-1/2 px-4 flex justify-center  ">
-              <div class="help-man-data text-left p-8">
-                <p class="text-2xl">“It has to be worthy”</p>
-                <p class="text-2xl">Konstantinos Papadakis on his carving work</p>
-                <p class="text-xl">
-                  He says many people often wonder why peacocks are often featured in altar pieces. “It’s the symbol of
-                  pride. The bad pride. Selfishness,” he says. “We carve them because the house of God – church – is
-                  open to everyone. Everybody is welcome as is. You come to this house as you are.”
-                  Orthodox churches hire craftsmen like Papadakis to create altarpiece carvings that enhance places of
-                  worship where priests baptize babies, bond marriages and give communion blessings. Orthodox churches
-                  also hire architects, iconographers who use wood, stone, marble or iron. Seamsters make clerical robes
-                  while other artists make chalices and patten, sometimes plated with precious metals and encrusted with
-                  jewels, for worship.
-                </p>
-
-                <button class="button mt-4 text-lg"> READ MORE </button>
+            <!-- Second Section -->
+            <div class="w-full lg:w-1/4 px-4">
+              <h2 class="text-2xl">Trending Blogs</h2>
+              <div class="blog-card">
+                <div class="help-man hoverimg mt-4 relative flex items-center">
+                  <div class="w-4/12 aspect-w-16 aspect-h-9">
+                    <a routerLinkActive="active" [routerLink]="['contactus']">
+                      <img alt="man" class="object-cover w-full h-full rounded" src="../../assets/images/blogs/blog page 2.png">
+                    </a>
+                  </div>
+                  <h3 class="text-lg font-semibold ml-4">Hello World</h3>
+                  <div class="overlay"></div>
+                </div>
+                <div class="help-man hoverimg mt-4 relative flex items-center">
+                  <div class="w-4/12 aspect-w-16 aspect-h-9">
+                    <a routerLinkActive="active" [routerLink]="['contactus']">
+                      <img alt="man" class="object-cover w-full h-full rounded"
+                      src="../../assets/images/blogs/blog page 3.png">
+                    </a>
+                  </div>
+                  <h3 class="text-lg font-semibold ml-4">Orthodox</h3>
+                  <div class="overlay"></div>
+                </div>
+                <div class="help-man hoverimg mt-4 relative flex items-center">
+                  <div class="w-4/12 aspect-w-16 aspect-h-9">
+                    <a routerLinkActive="active" [routerLink]="['contactus']">
+                      <img alt="man" class="object-cover w-full h-full rounded"
+                      src="../../assets/images/blogs/blog 1.png">
+                    </a>
+                  </div>
+                  <h3 class="text-lg font-semibold ml-4">Some Blog Title</h3>
+                  <div class="overlay"></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
       <section class="py-32 px-16 campaign">
-
         <div class="py-32  heading text-center">
           <h1 class="title">Campaigns</h1>
           <h2 class="sub-title">Important Campaigns and Projects dates.</h2>
@@ -247,7 +260,6 @@
           </div>
         </div>
       </section>
-
       <section class="py-32 px-32 donation-section">
         <app-donation-container></app-donation-container>
       </section>

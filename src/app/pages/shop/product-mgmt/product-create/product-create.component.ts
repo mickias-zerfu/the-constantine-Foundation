@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ProductService } from 'src/app/services/shop/product.service';
+import { ToastService } from 'src/app/services/shared/toast.service';
 import { CategoryModel } from 'src/app/models/shop/category.model';
 
 @Component({
@@ -10,15 +12,20 @@ import { CategoryModel } from 'src/app/models/shop/category.model';
 export class ProductCreateComponent implements OnInit {
 
   productForm: FormGroup;
-  isEditMode: boolean = false;
+  isEditMode = false;
   categories: CategoryModel[] = [
     { id: 1, name: 'Category 1', icon: '' },
     { id: 2, name: 'Category 2', icon: '' },
     { id: 3, name: 'Category 3', icon: '' }
   ];
   imageDisplay: any;
-  isSubmitted:boolean = false;
-  constructor(private formBuilder: FormBuilder) { }
+  isSubmitted = false;
+
+  constructor(
+    private formBuilder: FormBuilder,
+    private productService: ProductService,
+    private toastService: ToastService
+  ) {}
 
   ngOnInit() {
     this.productForm = this.formBuilder.group({
@@ -32,33 +39,6 @@ export class ProductCreateComponent implements OnInit {
       isFeatured: [false]
     });
   }
-  // onFileChange(event: any) {
-  //   const file = event.target.files[0];
-  //   if (file) {
-  //     this.productForm.patchValue({ image: file });
-  //     // this.productForm.get('image').updateValueAndValidity();
-  //     const fileReader = new FileReader();
-  //     fileReader.onload = () => {
-  //       this.imageDisplay = fileReader.result;
-  //     };
-  //     fileReader.readAsDataURL(file);
-  //   }
-  // }
-  // onFileChange(event: any) {
-  //   const file = event.target.files[0];
-  //   if (file) {
-  //     this.productForm.patchValue({ image: file });
-  //     // const imageControl = this.productForm.get('image');
-  //     // if (imageControl) {
-  //     //   imageControl.updateValueAndValidity();
-  //     // }
-  //       const fileReader = new FileReader();
-  //         fileReader.onload = () => {
-  //           this.imageDisplay = fileReader.result;
-  //         };
-  //         fileReader.readAsDataURL(file);
-  //       }
-  // }
 
   onFileChange(event: any) {
     const file = event.target.files[0];
@@ -75,29 +55,31 @@ export class ProductCreateComponent implements OnInit {
       event.target.value = '';
 
       this.productForm.patchValue({ image: file });
-      const imageControl = this.productForm.get('image');
-      if (imageControl) {
-        imageControl.updateValueAndValidity();
-      }
+      this.productForm.get('image')?.updateValueAndValidity();
     }
   }
-  // Handle form submission
+
   onSubmit() {
     this.isSubmitted = true;
+
     if (this.productForm.invalid) {
       return;
     }
-    // Form is valid, handle form submission logic here
-    const formData = new FormData();
-    formData.append('productName', this.productForm.value.productName);
-    formData.append('description', this.productForm.value.description);
-    formData.append('price', this.productForm.value.price);
-    formData.append('manufacturer', this.productForm.value.manufacturer);
-    formData.append('category', this.productForm.value.category);
-    formData.append('inStock', this.productForm.value.inStock);
-    formData.append('image', this.productForm.value.image);
 
-    // Send the formData to the server or perform other actions
+    const formData = new FormData();
+    Object.keys(this.productForm.value).forEach((key) => {
+      formData.append(key, this.productForm.value[key]);
+    });
+
+    this.productService.addProduct(formData).subscribe(() => {
+      this.toastService.showSuccess('New product added', 'Close', 2000);
+    });
+
+    console.log(this.productForm.value);
     console.log(formData);
+  }
+
+  get productFormControls() {
+    return this.productForm.controls;
   }
 }

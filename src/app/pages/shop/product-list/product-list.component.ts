@@ -4,10 +4,15 @@ import { ProductService } from 'src/app/services/shop/product.service';
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
-  styleUrls: ['./product-list.component.css','./card.css']
+  styleUrls: ['./product-list.component.css','./card.css','../../shop/shop-shared.css']
 })
 export class ProductListComponent implements OnInit {
   products: any[];
+  selectedCategory: string = 'all';
+
+  selectCategory(category: string): void {
+    this.selectedCategory = category;
+  }
 
   constructor(private shopService: ProductService) { }
 
@@ -18,6 +23,8 @@ export class ProductListComponent implements OnInit {
   getAllProducts() {
     this.shopService.getAllProducts().subscribe(data => {
       this.products = data.products;
+      // console.log(this.products);
+
     });
   }
 

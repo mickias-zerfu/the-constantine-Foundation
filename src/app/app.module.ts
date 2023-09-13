@@ -8,6 +8,7 @@ import { AppRoutingModule } from "./app-routing.module";
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { MaterialModule } from "./material.module";
+import { NgChartsModule } from 'ng2-charts';
 
 import { AppComponent } from './app.component';
 import { HomeContainerComponent } from './home-container/home-container.component';
@@ -59,6 +60,7 @@ import { CategoriesModalComponent } from './pages/shop/categories/categories-mod
 import { OrdersComponent } from './pages/shop/orders/orders.component';
 import { ProductMgmtComponent } from './pages/shop/product-mgmt/product-mgmt.component';
 import { ConfirmDialogComponent } from './shared/confirm-modal/confirm-dialog.component';
+import { PieChartComponent } from './home-container/donation-container/pie-chart/pie-chart.component';
 
 @NgModule({
   declarations: [
@@ -109,7 +111,8 @@ import { ConfirmDialogComponent } from './shared/confirm-modal/confirm-dialog.co
     CategoriesModalComponent,
     OrdersComponent,
     ProductMgmtComponent,
-    ConfirmDialogComponent
+    ConfirmDialogComponent,
+    PieChartComponent
   ],
   imports: [
     BrowserModule,
@@ -120,7 +123,8 @@ import { ConfirmDialogComponent } from './shared/confirm-modal/confirm-dialog.co
     BrowserAnimationsModule,
     UserModule,
     MaterialModule,
-    CarouselModule
+    CarouselModule,
+    NgChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
