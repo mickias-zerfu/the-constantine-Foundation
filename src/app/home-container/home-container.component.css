@@ -31,45 +31,48 @@
 .slide.slide-4 {
   background-image: url("../../assets/images/Bg/slider/4.png");
 }
+.slide.slide-5 {
+  background-image: url("../../assets/images/Bg/slider/5.png");
+}
 .slide img {
   height: auto; /* Adjust the height of the image according to its aspect ratio */
   width: 100%; /* Make the image fill the width of the slider */
 }
 
 .hero-content {
-  width: 60%;
+  width: 50%;
   height: 100% !important;
   margin: auto 10px;
-  padding: 150px 100px;
+  padding: 100px 100px;
 }
-.hero-content h2 {
+/* .hero-content h2 {
   font-family: "Bizantheum", sans-serif;
   font-size: 3em;
   line-height: 1.5;
   font-weight: 900;
   color: #ffffff;
-}
+} */
 .hero-content h4 {
-  font-family: "Bizantheum", sans-serif;
-  font-weight: 800;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
   font-size: 1.5em;
   line-height: 1.5;
-  color: #ffffff;
+  color: var(--primary-900);
 }
-.title {
+/* .title {
   font-family: "Bizantheum", sans-serif;
   font-size: 3em;
   line-height: 1.5;
   font-weight: 900;
   color: var(--primary);
-}
-.sub-title {
+} */
+/* .sub-title {
   font-family: "Bizantheum", sans-serif;
   font-weight: 800;
   font-size: 1.5em;
   line-height: 1.5;
   color: var(--primary);
-}
+} */
 /* .tagline{
   font-family: "Amellyta", sans-serif;
   font-size: 6rem;
@@ -192,8 +195,8 @@ h6 {
   background-color: var(--accent);
   padding: 0% 10%;
 }
-.reports-bg {
-}
+/* .reports-bg {
+} */
 .events {
   background-color: #efe6dd;
 }

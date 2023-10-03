@@ -17,7 +17,7 @@ export class HomeContainerComponent implements OnInit {
     dots: true,
     autoplay: true,
     navSpeed: 100,
-    navText: ['&#8249', '&#8250;'],
+    navText: ['&#8249', '&#8250;',],
     responsive: {
       0: {
         items: 1

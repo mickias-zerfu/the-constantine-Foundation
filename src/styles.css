@@ -19,12 +19,21 @@
   --accent: #21c278;
 } */
 :root {
-  --primary: #bc6951;
+  --primary: #72a450;
+  --primary-300: #a5c257;
+  --primary-100: #faffe0;
+  --primary-900: #184738;
+  --primary-700: #2a573f;
+  --primary-600: #507548;
   --secondary: #bdc4d3;
   --accent: #774c36;
   --primary-plus: #efe6dd;
 }
-
+:root {
+  --title-font: 'Bizantheum', sans-serif;
+  --sub-title-font: 'Bizantheum', sans-serif;
+  --p-font: 'Arial', sans-serif;
+}
 .title {
   font-family: "Bizantheum", sans-serif;
   font-size: 3em;
@@ -38,4 +47,12 @@
   font-size: 1.5em;
   line-height: 1.5;
   color: var(--primary);
+}
+.h4-paragraph{
+  font-family: var(--p-font);
+  font-weight: 600;
+  font-size: 1.0em;
+  line-height: 1.5;
+  color: var(--primary-900);
+
 }
