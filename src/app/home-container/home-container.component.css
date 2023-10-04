@@ -180,7 +180,7 @@ h6 {
   position: relative;
 }
 .blogs {
-  background-color: var(--primary-plus);
+  background-color: var(--primary-100);
   padding: 0% 10%;
 }
 .campaign {
@@ -192,7 +192,7 @@ h6 {
 }
 
 .reports {
-  background-color: var(--accent);
+  background-color: var(--primary-100);
   padding: 0% 10%;
 }
 /* .reports-bg {
@@ -201,8 +201,8 @@ h6 {
   background-color: #efe6dd;
 }
 .shop {
-  background-color: #bc6851b0;
+  background-color: var(--primary-900);
 }
 .partners {
-  background-color: #bc6851b0;
+  background-color: var(--primary-900);
 }

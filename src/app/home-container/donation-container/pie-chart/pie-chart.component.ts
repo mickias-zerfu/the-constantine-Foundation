@@ -33,8 +33,8 @@ export class PieChartComponent {
     datasets: [
       {
         data: [300, 500, 100],
-        backgroundColor: ['#bc6951', '#efe6dd', '#774c36'],
-        hoverBackgroundColor: ['#bc6951b0 ', '#efe6ddb0 ', '#774c36b0 '],
+        backgroundColor: ['#184738', '#507548', '#faffe0'],
+        hoverBackgroundColor: ['#184738b0 ', '#507548b0 ', '#faffe0b0 '],
       },
     ],
   };

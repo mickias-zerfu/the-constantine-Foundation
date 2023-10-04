@@ -50,7 +50,7 @@ export class CampaignContainerComponent implements OnInit {
     loop: true,
     autoplay: true,
     autoplayHoverPause: true,
-    autoplayTimeout: 5000,
+    autoplayTimeout: 55000,
     mouseDrag: false,
     touchDrag: false,
     pullDrag: false,
