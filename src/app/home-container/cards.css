@@ -16,21 +16,21 @@
   background-size: cover;
 }
 .card1 {
-  background-image: url("../../assets/images/cards/cardsBg1.png");
+  background-image: url("../../assets/images/cards/001.png");
   /* background-color: var(--primary-700); */
   margin-top: -50px;
   z-index: 10 !important;
   /* #fdd65b; */
 }
 .card2 {
-  background-image: url("../../assets/images/cards/cardsBg2.png");
+  background-image: url("../../assets/images/cards/002.png");
   /* background-color: var(--primary-700); */
   margin-top: -50px;
   z-index: 10 !important;
   /* #ff3636; */
 }
 .card3 {
-  background-image: url("../../assets/images/cards/cardsBg3.png");
+  background-image: url("../../assets/images/cards/003.png");
   /* background-color: var(--primary-300); */
   margin-top: -50px;
   z-index: 10 !important;
