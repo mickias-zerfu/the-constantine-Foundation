@@ -1,5 +1,5 @@
 footer{
-  background-image: url("../../../assets/images/footer.png");
+  background-image: url("../../../assets/images/landing.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -33,5 +33,6 @@ footer{
   color: rgb(178, 181, 224);
 }
 .footer-shadow{
-  background-color: var(--primary);
+  background-color: var(--primary-700);
+  opacity: 0.8;
 }
