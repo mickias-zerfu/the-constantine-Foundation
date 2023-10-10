@@ -61,6 +61,8 @@ import { OrdersComponent } from './pages/shop/orders/orders.component';
 import { ProductMgmtComponent } from './pages/shop/product-mgmt/product-mgmt.component';
 import { ConfirmDialogComponent } from './shared/confirm-modal/confirm-dialog.component';
 import { PieChartComponent } from './home-container/donation-container/pie-chart/pie-chart.component';
+import { ContactSideComponent } from './pages/contact-us/contact-side/contact-side.component';
+import { ContactBoardsComponent } from './pages/contact-us/contact-boards/contact-boards.component';
 
 @NgModule({
   declarations: [
@@ -112,7 +114,9 @@ import { PieChartComponent } from './home-container/donation-container/pie-chart
     OrdersComponent,
     ProductMgmtComponent,
     ConfirmDialogComponent,
-    PieChartComponent
+    PieChartComponent,
+    ContactSideComponent,
+    ContactBoardsComponent
   ],
   imports: [
     BrowserModule,

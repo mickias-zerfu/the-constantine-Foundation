@@ -7,6 +7,7 @@
   background-size: cover;
   background-position: center;
   height: 50vh;
+  opacity: 0.6 !important;
 }
 
 
@@ -23,7 +24,7 @@
   font-size: 3em;
   line-height: 1.5;
   font-weight: 900;
-  color: var(--primary);
+  color: var(--primary-700);
 }
 .sub-title {
   font-family: "Ubuntu", sans-serif;
